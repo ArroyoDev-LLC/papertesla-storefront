@@ -63,7 +63,7 @@
 
 /*Body Background Color : #000000*/
 body {font-family: 'Roboto', sans-serif; font-size: 15px;color: #faf1f1; background-color: #000000;font-weight:300;line-height: 26px;letter-spacing: 0.5px;overflow-x: hidden;-webkit-font-smoothing: antialiased;}
-p{margin-bottom: 0;color: #6d6d6d;}
+p{margin-bottom: 0;color: #686565;}
 a {color:inherit;}
 br{line-height: 15px}
 ::-webkit-scrollbar-track {background-color: #1b1c1d;border-left: 1px solid #faf1f1;}
@@ -71,11 +71,11 @@ br{line-height: 15px}
 ::-webkit-scrollbar-thumb {background: #1b1c1d;}
 a:hover, a:active {color: #8f9097;text-decoration: none;}
 a:focus, a:active, button:focus, button:active, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none;text-decoration: none}
-.form-control::placeholder {color: #c2c2c2;opacity: 1;}  .form-control:-ms-input-placeholder {color: #c2c2c2;}  .form-control::-ms-input-placeholder {color: #c2c2c2;}
+.form-control::placeholder {color: #c2c2c2;opacity: 1;}  .form-control:-ms-input-placeholder {color:#c2c2c2;}  .form-control::-ms-input-placeholder {color:#c2c2c2;}
 a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next {transition: ease-in-out 0.2s;-webkit-transition: ease-in-out 0.2s;-moz-transition: ease-in-out 0.2s;-ms-transition: ease-in-out 0.2s;-o-transition: ease-in-out 0.2s;}
 ul{list-style: none;padding: 0; margin: 0;}
 :focus{outline: none;}
-img {max-width: 100%}
+img {max-width: 80%}
 section,.section-padding {position: relative;padding: 7.5rem 0;overflow: hidden;}
 .section-top-margin{margin-top: 7.5rem;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {line-height: 1; font-family: 'Poppins', sans-serif; margin-bottom: 0;}
@@ -117,7 +117,7 @@ section,.section-padding {position: relative;padding: 7.5rem 0;overflow: hidden;
 
 .bg-black{background: #000000;}
 .bg-dark {background-color: #1d1d1d !important;}
-.bg-blue {background-color: #8f9097;}
+.bg-blue {background-color: #1d1d1d;} /*original color : #8f9097 | new color : #1d1d1d*/
 
 /* gradient background*/
 /*.gradient-bg1{
@@ -133,15 +133,15 @@ section,.section-padding {position: relative;padding: 7.5rem 0;overflow: hidden;
 .alt-color{color: #7202bb;}
 .third-color{color: #00bcd4;}
 
-/* gradient text */
-/*.gradient-text1{
-    background: #3264f5;
+/* gradient text 
+ .gradient-text1{
+    background: #1d1d1d;
     background: -moz-linear-gradient(left, #3264f5 2%, #7202bb 82%);
     background: -webkit-linear-gradient(left, #3264f5 2%,#7202bb 82%);
     background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7202bb',GradientType=1 );
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: #1d1d1d;
 } */
 
 /* button */
@@ -172,7 +172,7 @@ section,.section-padding {position: relative;padding: 7.5rem 0;overflow: hidden;
 ====================================== */
 
 /*icon bg bover */
-.facebook-bg-hvr:hover{background:#4267B2 !important;color: #fff !important;border: 1px solid #4267B2 !important;}
+.facebook-bg-hvr:hover{background:#4267B2 !important;color: #1d1d1d !important;border: 1px solid #4267B2 !important;}
 .twitter-bg-hvr:hover{background:#1DA1F2 !important;color: #fff !important;border: 1px solid #1DA1F2 !important;}
 .instagram-bg-hvr:hover{background:#C32AA3 !important;color: #fff !important;border: 1px solid #C32AA3 !important;}
 .linkedin-bg-hvr:hover{background:#0077B5 !important;color: #fff !important;border: 1px solid #0077B5 !important;}
@@ -742,7 +742,7 @@ header .center-logo a.logo img {max-width: 130px;}
     text-align: center;
     line-height: 30px;
     border-radius: 50px;
-    color: #fff;
+    color: #1d1d1d;
     font-size: 17px;
     margin: 3px;
     border: 1px solid transparent;
@@ -1171,7 +1171,7 @@ header .center-logo a.logo img {max-width: 130px;}
     display: inline-block;
     max-width: 380px;
     border: 20px solid #ffffff;
-    background-color:#ffffff;
+    background-color:#ffffff; /*change to black*/ 
 }
 
 .team-box .team-image{
@@ -1360,7 +1360,7 @@ header .center-logo a.logo img {max-width: 130px;}
     overflow: hidden;
     background: #fff;
     border-color: #FFFFFF;
-    color: #384141;
+    color: #1d1d1d;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
     box-shadow: 0 0 3px rgba(0, 0, 0, .1);
     -webkit-transition: all .1s ease;
@@ -1437,7 +1437,7 @@ header .center-logo a.logo img {max-width: 130px;}
     border-radius: 50px;
     font-size: 17px;
     margin-right: 1px;
-    color: #9a9a9a;
+    color: #1d1d1d;
     border: 1px solid transparent;
     -webkit-transition: background-color .2s ease-in-out;
     -moz-transition: background-color .2s ease-in-out;
@@ -1446,6 +1446,7 @@ header .center-logo a.logo img {max-width: 130px;}
     transition: background-color .2s ease-in-out;
 }
 
+/*background color : change later to Black bg white text*/
 .team-box-two .team-two-social a:hover{
     background-color:#ffffff;
     border: 1px solid #ffffff;
@@ -1484,7 +1485,7 @@ header .center-logo a.logo img {max-width: 130px;}
     visibility: visible;
 }
 .team-box-two .team-two-block:hover .team-two-content, .team-box-two .team-two-block:hover .team-two-content p{
-    color:#ffffff;
+    color:#1d1d1d; /*original color #ffffff*/
 }
 .team-box-two .team-two-block:hover .team-two-content span  {
     -webkit-text-fill-color: #ffffff;
@@ -1492,7 +1493,7 @@ header .center-logo a.logo img {max-width: 130px;}
 }
 
 .team-box-two .team-two-block:hover .team-two-social a{
-    color: #ffffff;
+    color: #1d1d1d; /*original color #ffffff*/
 }
 
 
@@ -1547,7 +1548,7 @@ header .center-logo a.logo img {max-width: 130px;}
     font-size: 17px;
     margin-right: 1px;
     margin-top: 10px;
-    color: #3b3b3b;
+    color: #1d1d1d;
     border: 1px solid transparent;
     -webkit-transition: background-color .2s ease-in-out;
     -moz-transition: background-color .2s ease-in-out;
@@ -2388,7 +2389,7 @@ ul.packages li i.fa-times{
 .side-nav .navbar-nav .nav-link {
     display: inline-table;
     /*side nav text color*/
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     padding: 2px 0 3px 0 !important;
     font-size: 1.5rem;
     font-weight: 300;
@@ -2462,7 +2463,7 @@ ul.packages li i.fa-times{
 
 
 /* ===================================
-    Blog Section
+    Blog Section / don't need
 ====================================== */
 
 .blog-text{
@@ -2635,7 +2636,7 @@ ul.packages li i.fa-times{
 
 .footer-social li a:hover{
     background-color:#00bcd4;
-    color: #ffffff;
+    color: #1d1d1d;
 }
 
 .company-about{
@@ -2645,7 +2646,7 @@ ul.packages li i.fa-times{
 .scroll-top-arrow {
     font-size: 30px;
     line-height: 45px;
-    color: #fff !important;
+    color: #1d1d1d !important;
     display: none;
     height: 45px;
     width: 45px;
