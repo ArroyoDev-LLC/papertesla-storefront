@@ -75,7 +75,7 @@ a:focus, a:active, button:focus, button:active, .btn.active.focus, .btn.active:f
 a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next {transition: ease-in-out 0.2s;-webkit-transition: ease-in-out 0.2s;-moz-transition: ease-in-out 0.2s;-ms-transition: ease-in-out 0.2s;-o-transition: ease-in-out 0.2s;}
 ul{list-style: none;padding: 0; margin: 0;}
 :focus{outline: none;}
-img {max-width: 80%}
+img {max-width: 100%}
 section,.section-padding {position: relative;padding: 7.5rem 0;overflow: hidden;}
 .section-top-margin{margin-top: 7.5rem;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {line-height: 1; font-family: 'Poppins', sans-serif; margin-bottom: 0;}
@@ -173,11 +173,11 @@ section,.section-padding {position: relative;padding: 7.5rem 0;overflow: hidden;
 
 /*icon bg bover */
 .facebook-bg-hvr:hover{background:#4267B2 !important;color: #1d1d1d !important;border: 1px solid #4267B2 !important;}
-.twitter-bg-hvr:hover{background:#1DA1F2 !important;color: #fff !important;border: 1px solid #1DA1F2 !important;}
-.instagram-bg-hvr:hover{background:#C32AA3 !important;color: #fff !important;border: 1px solid #C32AA3 !important;}
-.linkedin-bg-hvr:hover{background:#0077B5 !important;color: #fff !important;border: 1px solid #0077B5 !important;}
-.pinterest-bg-hvr:hover{background:#BD081C !important;color: #fff !important;border: 1px solid #BD081C !important;}
-.google-bg-hvr:hover{background:#DB4437 !important;color: #fff !important;border: 1px solid #DB4437 !important;}
+.twitter-bg-hvr:hover{background:#1DA1F2 !important;color: #1d1d1d !important;border: 1px solid #1DA1F2 !important;}
+.instagram-bg-hvr:hover{background:#C32AA3 !important;color: #1d1d1d !important;border: 1px solid #C32AA3 !important;}
+.linkedin-bg-hvr:hover{background:#0077B5 !important;color: #1d1d1d !important;border: 1px solid #0077B5 !important;}
+.pinterest-bg-hvr:hover{background:#BD081C !important;color: #1d1d1d !important;border: 1px solid #BD081C !important;}
+.google-bg-hvr:hover{background:#DB4437 !important;color: #1d1d1d !important;border: 1px solid #DB4437 !important;}
 
 /*icon text bover */
 .facebook-text-hvr:hover{color:#4267B2 !important;}
@@ -1171,7 +1171,7 @@ header .center-logo a.logo img {max-width: 130px;}
     display: inline-block;
     max-width: 380px;
     border: 20px solid #ffffff;
-    background-color:#ffffff; /*change to black*/ 
+    background-color:#1d1d1d; /*change to black*/ 
 }
 
 .team-box .team-image{
@@ -1358,9 +1358,9 @@ header .center-logo a.logo img {max-width: 130px;}
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background: #fff;
-    border-color: #FFFFFF;
-    color: #1d1d1d;
+    background: #1d1d1d;
+    border-color: #1d1d1d;
+    color: #ffffff;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
     box-shadow: 0 0 3px rgba(0, 0, 0, .1);
     -webkit-transition: all .1s ease;
@@ -1379,7 +1379,7 @@ header .center-logo a.logo img {max-width: 130px;}
 }
 
 .team-box-two .team-two-block{
-    background:#fbfbfb;
+    background:#1d1d1d;
     overflow: hidden;
     width: 100%;
     position: relative;
@@ -2680,7 +2680,7 @@ ul.packages li i.fa-times{
 .error-text h2{
     display: inline-block;
     background: #00bcd4;
-    color: #fff;
+    color: #1d1d1d;
     padding: 15px 30px;
     font-size: 2.2rem;
     border-radius: 25px;
@@ -3118,8 +3118,8 @@ ul.count_down.white li p:nth-child(2) {
     border-radius: 50px;
 }
 .blog-detail-tag .btn.btn-transparent-gray:hover{
-    border: 1px solid #00bcd4;
-    background-color: #00bcd4;
+    border: 1px solid #e4dfc8;
+    background-color: #e4dfc8;
     color: #FFFFFF;
 }
 

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!--Meta Data-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>PaperTesla Products</title>
+    <!-- Favicon -->
+    <link rel="images/PaperTesla.jpg" href="#">
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"> 
+    <!-- Cube Portfolio -->
+     <link rel="stylesheet" href="css/cubeportfolio.min.css"> 
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"> 
+    <!-- REVOLUTION STYLE SHEETS -->
+     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css"> 
+     <link rel="stylesheet" type="text/css" href="rs-plugin/css/navigation.css"> 
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Products.css">
+    </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="90">        
+<!--Loader Start-->
+<div class="loader">
+        <div class="loader-inner">
+            <div class="loader-blocks">
+                <span class="block-1"></span>
+                <span class="block-2"></span>
+                <span class="block-3"></span>
+                <span class="block-4"></span>
+                <span class="block-5"></span>
+                <span class="block-6"></span>
+                <span class="block-7"></span>
+                <span class="block-8"></span>
+                <span class="block-9"></span>
+                <span class="block-10"></span>
+                <span class="block-11"></span>
+                <span class="block-12"></span>
+                <span class="block-13"></span>
+                <span class="block-14"></span>
+                <span class="block-15"></span>
+                <span class="block-16"></span>
+            </div>
+        </div>
+    </div>
+    <!--Loader End-->
+    <!--Step 1 Layout Start images are Temp Images | replace with actual images-->
+
+<div class ="center-block">
+   <h2>Step 1 : Choose a Model</h2>
+   <br />
+  <form name="FormGrp1">
+  <table>
+   <tr>
+    <td>
+   <div  id="Cybertruck" class="Menu-box item">
+    <h6>Cybertruck</h6>
+    <br />
+    <div class="Menu-image">
+    <img src="images/avtar-1.jpg">
+    </div>
+    <p>This is the classic Cyber Truck Model.</p>
+    <input id="CtM" type="checkbox" name="CheckBoxGrp1" onchange='display_step1()'>
+   </div>
+   </td>
+   <td>
+   <div id="SuperCharger" class="Menu-box item">
+    <h6>Super Charger</h6>
+    <br />
+    <div class="Menu-image">
+    <img src="images/avtar-2.jpg">
+    </div>
+    <p>This is the Cyber Truck Super Charger Model.</p>
+    <input id="SuperC" type="checkbox" name="CheckBoxGrp1" onchange="display_step1()">
+   </div>
+   </td>
+</tr>
+</table>
+</form>
+    <!--Step 1 Layout End-->
+<br />
+    <!--Step 2 Layout Start-->
+
+<div id="display2" class="center-block bottompadding">
+ <h2>Step 2 : Choose a Package</h2>
+ <br />
+ <form name="FormGrp2">
+ <table>
+    <tr>
+    <td>
+        <div id="Model" class="Menu-box item">
+        <h6>Model</h6>
+        <div class="Menu-image">
+        <img src="images/avtar-1.jpg">
+        </div>
+        <p>this is the classic Cyber Truck Model.</p>
+        <input id="Model-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
+        </div>
+    </td>
+    <td>
+      <div id="MWL" class="Menu-box item">
+        <h6>Model with lights</h6>
+        <div class="Menu-image">
+        <img src="images/avtar-2.jpg">
+        </div>
+        <p>This is the Model With Lights that are controllable through our mobile app.</p>
+        <input id="MWL-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
+      </div>
+    </td>
+    <td>
+    <div id="wallart" class="Menu-box item">
+       <h6>Wall Art</h6>
+       <div class="Menu-image">
+       <img src="images/avtar-3.jpg">
+       </div>
+       <p>This is the Wall Art Model. Its for hanging on a wall.</p>
+       <input id="wallart-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
+    </div>
+    </td>
+    <td>
+    <div id="WAwL" class="Menu-box item">
+        <h6>Wall Art with Lights</h6>
+        <div class="Menu-image">
+        <img src="images/avtar-3.jpg">
+        </div>
+        <p>This is the Wall Art Model with Lights that you can controll through the mobile app.</p>
+        <input id="WAwL-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
+    </div>
+    </td>
+    </tr>
+</div>
+<br />
+</table>
+</form>
+
+<!--Layout 2 END -->
+<br />
+
+<!-- Display Layout 2 JS note: Needs to Nuke Non-selected cards(other than just Model) and Reveal Layout 3-->
+<!--Layout 3 Start | Needs to Have radio buttons changed to Checkboxs and be implemented in JS code. -->
+<div id="display3" class="center-block">
+<h2>Step 3 : Choose a size</h2>
+    <form name="FormGrp3">
+   <table>
+    <tr>
+
+    <td>
+    <div id="tenthScale" class="Menu-box item">
+        <h6>1/10 Scale Model</h6>
+        <div class="Menu-image">
+        <img src="images/avtar-1.jpg">
+        </div>
+        <ul>
+            <li>Height: </li>
+            <li>Width : </li>
+            <li>Length: </li>
+        </ul>
+        <input id="tenth_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
+    </div>
+    </td>
+
+    <td>
+    <div id="fourthScale" class="Menu-box item ">
+      <h6>1/4 Scale Model</h6>
+      <div class="Menu-image">
+      <img src="images/avtar-3.jpg">
+      </div>
+      <ul>
+        <li>Height: </li>
+        <li>Width : </li>
+        <li>Length: </li>
+      </ul>
+      <input id="fourth_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
+    </div>
+    </td>
+
+    <td>
+    <div id="halfScale" class="Menu-box item">
+      <h6>1/2 Scale Model</h6>
+      <div class="Menu-image">
+      <img src="images/avtar-3.jpg">
+      </div>
+      <ul>
+        <li>Height: </li>
+        <li>Width : </li>
+        <li>Length: </li>
+      </ul>
+      <input id="half_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
+    </div>
+    </td>
+
+    <td>
+      <div id="FullScale" class="Menu-box item ">
+        <h6>Full Scale Model</h6>
+          <div class="Menu-image">
+          <img src="images/avtar-3.jpg">
+          </div>
+          <ul>
+            <li>Height: </li>
+            <li>Width : </li>
+            <li>Length: </li>
+        </ul>
+        <input id="Full_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
+      </div>   
+    </td>
+
+    </tr>
+</table>
+</form>
+</div>
+</div> 
+
+<!--Layout 3 END-->
+
+<!-- Layout 4 START -->
+<div clas="bottompadding">
+<form>
+ <table>
+    <td>
+    <div id="display4" class="Menu-box item productreview">
+     <h6>Product Review</h6>
+        <div class="Menu-image product-image">
+        <img src="images/avtar-3.jpg">
+     </div>
+   <!-- INPUT paypal here -->
+    </div>
+    </td>
+ </table>
+</form> 
+</div>
+
+<!-- Layout 4 END -->
+
+<!-- Optional JavaScript -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.appear.js"></script>
+<!-- isotop gallery -->
+<script src="js/isotope.pkgd.min.js"></script>
+<!-- cube portfolio gallery -->
+<script src="js/jquery.cubeportfolio.min.js"></script>
+<!-- owl carousel slider -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- text rotate -->
+<script src="js/morphext.min.js"></script>
+<!-- particles -->
+<script src="js/particles.min.js"></script>
+<!-- parallax Background -->
+<script src="js/parallaxie.min.js"></script>
+<!-- fancybox popup -->
+<script src="js/jquery.fancybox.min.js"></script>
+<!-- fancybox popup -->
+<script src="js/wow.js"></script>
+<!-- REVOLUTION JS FILES -->
+<script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION EXTENSIONS -->
+<script src="rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+<!-- map -->
+<!-- custom script -->
+<script src="js/script.js"></script>
+<script src="js/Products.js"></script>
+</body>
+</html>
