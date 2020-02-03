@@ -53,9 +53,15 @@
         </div>
     </div>
     <!--Loader End-->
-    <!--Step 1 Layout Start images are Temp Images | replace with actual images-->
+<div class="pageintro wow">
+  <h1>Welcome to the Products page!</h1>
+  <p>Here you"ll select and choose the design for your PaperTesla </p>
+  <button id="scroll-down" class="pageintro-button" type="button" onclick="button_click()">Let's get started!</button>
+</div>
 
-<div class ="center-block">
+
+<!--Step 1 Layout Start images are Temp Images | replace with actual images-->
+<div id="display1" class="center-block wow bottompadding">
    <h2>Step 1 : Choose a Model</h2>
    <br />
   <form name="FormGrp1">
@@ -86,11 +92,12 @@
 </tr>
 </table>
 </form>
+</div>
     <!--Step 1 Layout End-->
 <br />
     <!--Step 2 Layout Start-->
 
-<div id="display2" class="center-block bottompadding">
+<div id="display2" class="center-block wow bottompadding">
  <h2>Step 2 : Choose a Package</h2>
  <br />
  <form name="FormGrp2">
@@ -137,22 +144,19 @@
     </div>
     </td>
     </tr>
-</div>
-<br />
+<!-- <br /> -->
 </table>
 </form>
-
+</div>
 <!--Layout 2 END -->
 <br />
-
-<!-- Display Layout 2 JS note: Needs to Nuke Non-selected cards(other than just Model) and Reveal Layout 3-->
-<!--Layout 3 Start | Needs to Have radio buttons changed to Checkboxs and be implemented in JS code. -->
-<div id="display3" class="center-block">
+<!-- Layout 3 Start -->
+<div id="display3" class="center-block wow bottompadding">
 <h2>Step 3 : Choose a size</h2>
-    <form name="FormGrp3">
-   <table>
-    <tr>
-
+<br />
+ <form name="FormGrp3">
+  <table>
+   <tr>
     <td>
     <div id="tenthScale" class="Menu-box item">
         <h6>1/10 Scale Model</h6>
@@ -217,23 +221,43 @@
 </table>
 </form>
 </div>
-</div> 
+<!-- </div>  -->
 
 <!--Layout 3 END-->
-
+<br />
 <!-- Layout 4 START -->
-<div clas="bottompadding">
+<div id="display4" class="Menu-box item wow productreview Menu-text">
 <form>
  <table>
-    <td>
-    <div id="display4" class="Menu-box item productreview">
-     <h6>Product Review</h6>
+    <tr>
+      <td>
+         <h6>Product Review</h6>
         <div class="Menu-image product-image">
-        <img src="images/avtar-3.jpg">
-     </div>
-   <!-- INPUT paypal here -->
-    </div>
-    </td>
+        <img src="images/bg-img-light-1.jpg">
+        </div>
+      </td>
+        <td>
+        <ul class="product-info-list product-info">
+          <li><span id="Selected_Model"></span></li>
+          <li><span id="Selected_Package"></span></li>
+          <li><span id="Selected_Size"></span></li>
+          <li><span id="Price_Total"></span></li>
+        </ul>
+       </td>
+      </tr> 
+     <tr>
+      <td> 
+        <div class="button-placement">
+        <button id="tempButton" type="button">TempPayPal</button>
+        </div>
+      </td>
+      <td>
+        <div class="button2-placement">
+        <button id="tempButton2"  type="button">TempPayPal</button>
+        </div>
+       </td>
+    </tr>
+    <!-- </td> -->
  </table>
 </form> 
 </div>

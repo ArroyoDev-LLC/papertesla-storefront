@@ -1,6 +1,5 @@
-body{ background-color: #1d1d1d;color: #ffffff;}
+body{ background-color: #1d1d1d;color: #ffffff; font-optical-sizing:auto;}
 input{position:absolute;}
-ul, li {color:#ffffff;}
 p{text-align:center; color:#ffffff;}
 .h1.h2.h3.h4.h5.h6,h1,h2,h3,h4,h5,h6{color:#ffffff;}
 
@@ -8,7 +7,7 @@ p{text-align:center; color:#ffffff;}
     text-align: center;
     margin: auto;
     border: 3px solid #0e0d0d;
-    background-color: #000000; 
+    background-color: #0e0d0d; 
     color:#ffffff;
     box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
     top:60%;
@@ -35,34 +34,71 @@ p{text-align:center; color:#ffffff;}
 
 .productreview
 {
-    padding:20px;
+    align-content: center;
+    align-self: center;
     margin: auto;
     border: 3px solid #0e0d0d;
     background-color: #000000; 
     color:#ffffff;
     box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
-    top:60%;
-    bottom:80%;
-    width: 870px;
+    top:65%;
+    padding-top:25px;
+    padding-bottom:20px;
+    padding-left: 15px;
+    width: 880px;
     height: 580px;
 }
 .product-image
 {
     float:left;
-    width: 520px;
-    height: 380px;
-    border: 3px solid #1d1d1d;
-    padding: 10px;
+    width: 480px;
+    height: 355px;
+    border-spacing:50px, 0px;
+    border: 2px solid #c7c3c3;
+    
+}
+.product-info
+{
+    float: right;
+    align-content: left;
+    font-size:18px;
+    color:#ffffff;
+    text-decoration-line: underline;
 }
 
+.product-info-list
+{
+    color:#ffffff;
+    text-align:right;
+    border-spacing: 50px, 0px;
+}
+
+.button-placement 
+{
+    align-self:left;
+    align-items:left;
+    padding-left:230px;
+    padding-top: 80px;
+    border-spacing: 25px, 10px;
+}
+
+.button2-placement 
+{
+    align-self:right;
+    align-items:right;
+    padding-right:230px;
+    padding-top: 80px;
+    border-spacing: 25px, 10px;
+}
 
 .center-block {
-    /*display: -webkit-box;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    */
+    
+    display: -ms-flexbox;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -moz-box-pack: center;
@@ -82,3 +118,21 @@ p{text-align:center; color:#ffffff;}
     align-items: center;
 }
 
+.pageintro
+{
+   font-size:18px;
+   text-align: center;
+   font-optical-sizing:auto;
+   padding-top:275px;
+   padding-bottom:400px;
+}
+.pageintro-button
+{
+
+   align-items: center;
+   align-self: center;
+   border: #ffffff;
+   /* background-image:url(/images/) */
+   /*Temporary*/ background-color:#ffffff;
+   color:#1d1d1d;
+}
