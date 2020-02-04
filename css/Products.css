@@ -44,17 +44,17 @@ p{text-align:center; color:#ffffff;}
 {
     align-content: center;
     align-self: center;
+    text-align: center;
     margin: auto;
     border: 3px solid #629eda;
     background-color: #0f0e0e; 
-    color:#eee1e1;
     box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
     top:65%;
     padding-top:25px;
     padding-bottom:20px;
     padding-left: 15px;
     width: 880px;
-    height: 580px;
+    height: 540px;
 }
 .product-image
 {
@@ -62,8 +62,8 @@ p{text-align:center; color:#ffffff;}
     width: 480px;
     height: 355px;
     border-spacing:50px, 0px;
-    
-    border: 2px solid #c7c3c3;
+
+    border: 2px solid;
     
 }
 .product-info
@@ -72,7 +72,6 @@ p{text-align:center; color:#ffffff;}
     align-content: left;
     font-size:18px;
     color:#ffffff;
-    text-decoration-line: underline;
 }
 
 .product-info-list
@@ -87,8 +86,9 @@ p{text-align:center; color:#ffffff;}
     align-self:left;
     align-items:left;
     padding-left:230px;
-    padding-top: 80px;
+    padding-top: 30px;
     border-spacing: 25px, 10px;
+
 }
 
 .button2-placement 
@@ -96,10 +96,45 @@ p{text-align:center; color:#ffffff;}
     align-self:right;
     align-items:right;
     padding-right:230px;
-    padding-top: 80px;
+    padding-top: 30px;
     border-spacing: 25px, 10px;
 }
 
+.cartbutton{
+    display: inline-block;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 10px 14px;
+    margin: 0;
+    background: #00bcd4;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    }
+    .tempbutton:hover{ background: #ff6600;
+}
+
+.paypalbutton{
+    display: inline-block;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding: 10px 14px;
+    margin: 0;
+    background: #ff6600;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    }
+    .tempbutton:hover{ background: #e05c04;
+}
 .center-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -146,8 +181,38 @@ p{text-align:center; color:#ffffff;}
    color:#1d1d1d;
 }
 
-.checkbox-label input{
+.checkbox-label input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+}
+
+.product-review-header h6 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.product-review-header {
+    align-items: center;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.product-review-table {
+    padding-left: 15px;
+}
+
+.product-review-table td, th {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    height: 20px;
+    padding: 20px;
+}
+
+.product-review-table th {
+    text-align: left;
+}
+
+.product-review-table p {
+    text-align: right;
 }

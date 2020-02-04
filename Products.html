@@ -287,30 +287,52 @@
  <table>
     <tr>
       <td>
+        <div class="product-review-header">
          <h6>Product Review</h6>
+        </div>
         <div class="Menu-image product-image">
-        <img src="images/bg-img-light-1.jpg">
+          <img src="images/bg-img-light-1.jpg">
         </div>
       </td>
         <td>
         <ul class="product-info-list product-info">
-          <li>Model : <p id="Selected_Model"></p></li>
-          <li>Package : <p id="Selected_Package"></p></li>
-          <li>Size : <p id="Selected_Size"></p></li>
-          <li>Color : <P id="Selected_Color"></P></li>
-          <li>Total$ : <p id="Price_Total"></p></li>
+      <br />
+        <div class="product-review-table">
+          <table>
+            <tr>
+              <th> Model </th>
+              <td><p id="Selected_Model"></p></td>
+            </tr>
+            <tr>
+              <th> Package </th>
+              <td> <p id="Selected_Package"></p> </td>
+            </tr>
+            <tr>
+              <th>Size</th>
+              <td><p id="Selected_Size"></p></td>
+            </tr>
+            <tr>
+              <th>Color</th>
+              <td><P id="Selected_Color"></P></td>
+            </tr>
+            <tr>
+              <th>Total Price</th>
+              <td><p id="Price_Total"></p></td>
+            </tr>
+          </table>
+        </div>
         </ul>
        </td>
       </tr> 
      <tr>
       <td> 
         <div class="button-placement">
-        <button id="tempButton" type="button">TempPayPal</button>
+        <button id="tempButton" class="cartbutton" type="button">Add to Cart</button>
         </div>
       </td>
       <td>
         <div class="button2-placement">
-        <button id="tempButton2"  type="button">TempPayPal</button>
+        <button id="tempButton2" class="paypalbutton"  type="button"> Buy Now </button>
         </div>
        </td>
     </tr>
