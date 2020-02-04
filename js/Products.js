@@ -99,6 +99,7 @@ if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
 {
     display2.style.display = "none";
     display3.style.display = "none";
+    display4.style.display = "none";
     display5.style.display = "none";
     SuperCharger.style = "center-block";
     Cybertruck.style="center-block";
@@ -158,6 +159,7 @@ function display_step2()
     {
         display3.style.display = "none";
         display5.style.display = "none";
+        display4.style.display = "none";
         display1.style.display = "block";
         display1.style = "center-block";
         WallArtWithLights.style = "center-block";
@@ -217,7 +219,7 @@ function display_step3()
     } 
      else
     {
-       display4.style.display = "none";
+        display4.style.display = "none";
         tenthScale.style = "center-block";
         fourthScale.style = "center-block";
         halfScale.style = "center-block";
@@ -239,12 +241,16 @@ function display_step4()
       display5.style.display = "block";
       display5.style = "center-block";
       display5.scrollIntoView();
-      tempButtonp1.style.display = "button-placement";
-      tempButtonp2.style.display = "button2-placement";
       Classic.style.display = "block";
       Classic.style = "center-block";
       Black.style.display = "none";
       customDesign.style.display = "none";
+      tempButtonp1.style.display = "block";
+      tempButtonp2.style.display = "block";
+      tempButtonp1.style = "center-block";
+      tempButtonp2.style = "center-block";
+      tempButtonp1.style.display = "button-placement";
+      tempButtonp2.style.display = "button2-placement";
       document.getElementById("Selected_Color").innerHTML = "Silver";
 
   } 
@@ -253,12 +259,16 @@ function display_step4()
       display5.style.display = "block";
       display5.style = "center-block";
       display5.scrollIntoView();
-      tempButtonp1.style.display = "button-placement";
-      tempButtonp2.style.display = "button2-placement";
       Black.style.display = "block";
       Black.style = "center-block";
       Classic.style.display = "none";
       customDesign.style.display = "none";
+      tempButtonp1.style.display = "block";
+      tempButtonp2.style.display = "block";
+      tempButtonp1.style = "center-block";
+      tempButtonp2.style = "center-block";
+      tempButtonp1.style.display = "button-placement";
+      tempButtonp2.style.display = "button2-placement";
       document.getElementById("Selected_Color").innerHTML = "Black";
   }
    else if(CheckBox_Custom.onselectionchange = CheckBox_Custom.checked)
@@ -267,17 +277,23 @@ function display_step4()
       display5.style.display = "block";
       display5.style = "center-block";
       display5.scrollIntoView();
-      tempButtonp1.style.display = "button-placement";
-      tempButtonp2.style.display = "button2-placement";
       customDesign.style.display = "block";
       customDesign.style = "center-block";
       Classic.style.display = "none";
       Black.style.display = "none";
+      tempButtonp1.style.display = "block";
+      tempButtonp2.style.display = "block";
+      tempButtonp1.style = "center-block";
+      tempButtonp2.style = "center-block";
+      tempButtonp1.style.display = "button-placement";
+      tempButtonp2.style.display = "button2-placement";
       document.getElementById("Selected_Color").innerHTML = "Custom";
   } 
    else
   {
       display5.style.display = "none";
+      display4.style.display = "block";
+      display4.style = "center-block";
       Classic.style.display = "block";
       Classic.style = "center-block";
       Black.style.display = "block";
