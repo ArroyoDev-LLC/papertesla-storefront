@@ -456,7 +456,7 @@
 
 <!--Testimonials Start-->
 <!--TODO: add custom javascript for getting Reviews, and add javascript for posting reviews -->
-<section id="review" >
+<section id="review">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 wow fadeInLeft">
@@ -468,8 +468,8 @@
                 <!-- Review 1 / template -->
                 <div class="col-md-6 mb-4 wow fadeInRight">
                  <div class="CR-layout customer-review CR-box">
-                    <div class="center-block text-white fadeIn">
-                     <h4>Anonymous</h4>
+                    <div class="CR-center-block review-title text-white fadeIn">
+                     <h3>Anonymous</h3>
                      <br />
                      <h5>5.0 / 5.0</h5>
                      <br />
@@ -488,7 +488,15 @@
             </tr>
             <!--Template 2 end-->
         </table>
+        <div class="review-form">
+        <div class="review-prompt">
+        <h5>Leave a review of you own!</h5>
         </div>
+        <div class="button">
+        <button id="review-button" type="menu" onclick="write_a_review()">Review</button>
+        </div>
+        </div>
+    </div>
      </div>
      </div>
     </div>
@@ -573,6 +581,9 @@
 <script src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
 <!-- map -->
+<!-- React -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorgin></script>
 <!-- custom script -->
 <script src="js/script.js"></script>
 

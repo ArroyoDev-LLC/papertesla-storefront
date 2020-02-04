@@ -1,6 +1,7 @@
 
 .CR-layout
 {
+    align-self:center;
     margin:auto;
     padding: 5px; 
     border: 2px; 
@@ -13,12 +14,35 @@
 .CR-box
 {
 
-   align-self: auto;
+   align-self: center;
    box-sizing: content-box;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-   padding: 180;
+   width:0%;
+   height:0%;
+   padding: 150px;
 
+}
+
+.CR-center-block 
+{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: normal;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 /* @viewport
@@ -61,4 +85,34 @@ make  review  template  responsive.
   color:#ffffff;
   text-align:left;
   margin: auto;
+}
+
+
+.review-form
+{
+  -webkit-box-flex: center;
+  -moz-box-flex: center;
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.button
+{
+  align-content: center;
+  margin: auto;
+  padding: 10px;
+  border-style: solid;
+  border-color: #629eda;
+  border: 5px;
+    
+}
+
+.review-prompt 
+{
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  padding: 0px;
 }
