@@ -4,7 +4,8 @@
     var display2 = document.getElementById("display2");
     var display3 = document.getElementById("display3");
     var display4 = document.getElementById("display4");
-
+    var display5 = document.getElementById("display5");
+    var pageintro = document.getElementById("pageintro");
     //Css display control variables
     //1st layout display vars
     var Cybertruck = document.getElementById("Cybertruck");
@@ -59,12 +60,13 @@
     var Model_Selection;
     
     var Package_Selection;
-
-    var Size_Selection;
     
+    var Size_Selection;
+        
     //Pricing Variables
     var Model_Price;
-    var Total_Price;
+    
+
 
     //button variables
     var scroll_button = document.getElementById("scroll-down");
@@ -77,6 +79,8 @@ function button_click()
 }
 
 function display_step1(){
+
+ pageintro.style.display = "none";
 
 if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
 {
@@ -98,15 +102,16 @@ if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
 {
     display2.style.display = "none";
     display3.style.display = "none";
-    display4.style.display = "none";
+    display5.style.display = "none";
     SuperCharger.style = "center-block";
     Cybertruck.style="center-block";
 }
-
+ Selections();
 }
 
 function display_step2()
 {
+   display1.style.display = "none";
     if(CheckBox_Model.onselectionchange = CheckBox_Model.checked)
     {
         display3.style.display = "block";
@@ -152,24 +157,26 @@ function display_step2()
      else
     {
         display3.style.display = "none";
-        display4.style.display = "none";
+        display5.style.display = "none";
+        display1.style.display = "block";
+        display1.style = "center-block";
         WallArtWithLights.style = "center-block";
         ModelWithLights.style = "center-block";
         WallArt.style = "center-block";
         Model.style = "center-block";
     }
 
+    Selections();
 }
 
 function display_step3()
 {
+    display2.style.display = "none";
     if(CheckBox_fourth.onselectionchange = CheckBox_fourth.checked)
     {
         display4.style.display = "block";
         display4.style = "center-block";
         display4.scrollIntoView();
-        tempButtonp1.style.display="block";
-        tempButtonp2.style.display="block";
         fourthScale.style = "center-block";
         tenthScale.style.display = "none";
         halfScale.style.display = "none";
@@ -180,8 +187,6 @@ function display_step3()
         display4.style.display = "block";
         display4.style = "center-block";
         display4.scrollIntoView();
-        tempButtonp1.style.display="block";
-        tempButtonp2.style.display="block";
         tenthScale.style = "center-block";
         fourthScale.style.display = "none";
         halfScale.style.display = "none";
@@ -192,8 +197,6 @@ function display_step3()
         display4.style.display = "block";
         display4.style = "center-block";
         display4.scrollIntoView();
-        tempButtonp1.style.display="block";
-        tempButtonp2.style.display="block";
         halfScale.style = "center-block";
         tenthScale.style.display = "none";
         fourthScale.style.display = "none";
@@ -204,8 +207,6 @@ function display_step3()
         display4.style.display = "block";
         display4.style = "center-block";
         display4.scrollIntoView();
-        tempButtonp1.style.display="block";
-        tempButtonp2.style.display="block";
         fullScale.style = "center-block";
         tenthScale.style.display = "none";
         fourthScale.style.display = "none";
@@ -213,15 +214,55 @@ function display_step3()
     } 
      else
     {
-       display4.style.display = "none";
-       tempButtonp1.style.display = "none";
-       tempButtonp2.style.display = "none";
-       tenthScale.style = "center-block";
+       display3.style.display = "none";
+        tenthScale.style = "center-block";
         fourthScale.style = "center-block";
         halfScale.style = "center-block";
         fullScale.style = "center-block";
+        display2.style.display="block";
+        display2.style = "center-block";       
     }
 
+}
+
+function display_step4()
+{
+
+   var CheckBox_Classic = document.getElementById("Classic");
+   var CheckBox_Black = document.getElementById("BlackOut");
+   var CheckBox_Custom = document.getElementById("customDesign");
+
+   display3.style.display = "none";
+  if(CheckBox_Classic.onselectionchange = CheckBox_Classic.checked)
+  {
+      display4.style.display = "block";
+      display4.style = "center-block";
+      display4.scrollIntoView();
+    
+      document.getElementById("Selected_Color").innerHTML = "Silver";
+
+  } 
+   else if(CheckBox_Black.onselectionchange = CheckBox_Black.checked)
+  {
+      display4.style.display = "block";
+      display4.style = "center-block";
+      display4.scrollIntoView();
+      document.getElementById("Selected_Color").innerHTML = "Black";
+  }
+   else if(CheckBox_Custom.onselectionchange = CheckBox_Custom.checked)
+  {
+      
+      display4.style.display = "block";
+      display4.style = "center-block";
+      display4.scrollIntoView();
+      document.getElementById("Selected_Color").innerHTML = "Custom";
+  } 
+   else
+  {
+      display5.style.display = "none";
+      display3.style.display="block";
+      display3.style = "center-block";       
+  }
 }
 
 function uncheck()
@@ -241,214 +282,287 @@ function uncheck()
 
 function Selections()
 {
-  if(CheckBox_CtM.onselect = CheckBox_CtM.checked )
+  if(CheckBox_CtM == CheckBox_CtM.checked )
   {
-      Model_Selection.innerHTML() = "CyberTruck";
+      Model_Selection.innerHTML = "CyberTruck";
 
-      if(CheckBox_Model.onselect = CheckBox_Model.checked)
+      if(CheckBox_Model == CheckBox_Model.checked)
       { 
-          Package_Selection.innerHTML() = "Model";
+          Package_Selection.innerHTML = "Model";
 
-          if(CheckBox_tenth.onselect = CheckBox_tenth.checked)
+          if(CheckBox_tenth == CheckBox_tenth.checked)
           {
-            Size_Selection.innerHTML() = "1/10th Scale";
+            Size_Selection.innerHTML = "1/10th Scale";
             Model_Price = 24.99;
           }
-          else if(CheckBox_fourth.onselect = CheckBox_fourth.checked)
+          else if(CheckBox_fourth == CheckBox_fourth.checked)
           {
-            Size_Selection.innerHTML() = "1/4th Scale";
+            Size_Selection.innerHTML = "1/4th Scale";
             Model_Price = 49.99;
           }
-          else if(CheckBox_half.onselect = CheckBox_half.checked)
+          else if(CheckBox_half == CheckBox_half.checked)
           {
-            Size_Selection.innerHTML() = "1/2 Scale";
+            Size_Selection.innerHTML = "1/2 Scale";
             Model_Price = 99.99;
           }
-          else if(CheckBox_full.onselect = CheckBox_full.checked)
+          else if(CheckBox_full == CheckBox_full.checked)
           {
-            Size_Selection.innerHTML() = "Full Scale";
+            Size_Selection.innerHTML = "Full Scale";
             Model_Price = 199.99;
           }
       }
-      else if(CheckBox_MWL.checked = true)
+      else if(CheckBox_MWL.checked == true)
       {
-        Package_Selection.innerHTML() = "Model With Lights";
-        if(CheckBox_tenth.checked = true)
+        Package_Selection.innerHTML = "Model With Lights";
+
+        if(CheckBox_tenth.checked == true)
           {
-            Size_Selection.innerHTML() = "1/10th Scale";
+            Size_Selection.innerHTML = "1/10th Scale";
             Model_Price = 49.99;
           }
-          else if(CheckBox_fourth.checked = true)
+          else if(CheckBox_fourth.checked == true)
           {
-            Size_Selection.innerHTML() = "1/4th Scale";
+            Size_Selection.innerHTML = "1/4th Scale";
             Model_Price = 99.99;
           }
-          else if(CheckBox_half.checked = true)
+          else if(CheckBox_half.checked == true)
           {
-            Size_Selection.innerHTML() = "1/2 Scale";
+            Size_Selection.innerHTML = "1/2 Scale";
             Model_Price = 179.99;
           }
-          else if(CheckBox_full.checked = true)
+          else if(CheckBox_full.checked == true)
           {
-            Size_Selection.innerHTML() = "Full Scale";
+            Size_Selection.innerHTML = "Full Scale";
             Model_Price = 299.99;
           }
       }
-      else if(CheckBox_wallart.checked = true)
+      else if(CheckBox_wallart.checked == true)
       {
-        Package_Selection.innerHTML() = "Wall Art";
-        if(CheckBox_tenth.checked = true)
+        Package_Selection.innerHTML = "Wall Art";
+        if(CheckBox_tenth.checked == true)
         {
-          Size_Selection.innerHTML() = "1/10th Scale";
+          Size_Selection.innerHTML = "1/10th Scale";
           Model_Price = 14.99;
         }
-        else if(CheckBox_fourth.checked = true)
+        else if(CheckBox_fourth.checked == true)
         {
-          Size_Selection.innerHTML() = "1/4th Scale";  
+          Size_Selection.innerHTML = "1/4th Scale";  
           Model_Price = 29.99;
         }
-        else if(CheckBox_half.checked = true)
+        else if(CheckBox_half.checked == true)
         {
-          Size_Selection.innerHTML() = "1/2 Scale";  
+          Size_Selection.innerHTML = "1/2 Scale";  
           Model_Price = 49.99;
         }
-        else if(CheckBox_full.checked = true)
+        else if(CheckBox_full.checked == true)
         {
-          Size_Selection.innerHTML() = "Full Scale";
+          Size_Selection.innerHTML = "Full Scale";
           Model_Price = 99.99;
         }
       }
-      else if(CheckBox_WAwL.checked = true)
+      else if(CheckBox_WAwL.checked == true)
       {
-        Package_Selection.innerHTML() = "Wall Art with Lights";
-        if(CheckBox_tenth.checked = true)
+        Package_Selection.innerHTML = "Wall Art with Lights";
+        if(CheckBox_tenth.checked == true)
         {
-          Size_Selection.innerHTML() = "1/10th Scale";  
+          Size_Selection.innerHTML = "1/10th Scale";  
           Model_Price = 39.99;
         }
-        else if(CheckBox_fourth.checked = true)
+        else if(CheckBox_fourth.checked == true)
         {
-          Size_Selection.innerHTML() = "1/4th Scale";   
+          Size_Selection.innerHTML = "1/4th Scale";   
           Model_Price = 79.99;
         }
-        else if(CheckBox_half.checked = true)
+        else if(CheckBox_half.checked == true)
         {
-          Size_Selection.innerHTML() = "1/2 Scale";  
+          Size_Selection.innerHTML = "1/2 Scale";  
           Model_Price = 149.99;
         }
-        else if(CheckBox_full.checked = true)
+        else if(CheckBox_full.checked == true)
         {
-          Size_Selection.innerHTML() = "Full Scale";  
+          Size_Selection.innerHTML = "Full Scale";  
           Model_Price = 199.99;
         }
       }
   } 
-   else if(CheckBox_SuperC.checked = true)
+   else if(CheckBox_SuperC.checked == true)
   {
-      Model_Selection.innerHTML() = "SuperCharger";
+      Model_Selection.innerHTML = "SuperCharger";
       
-      if(CheckBox_Model.checked = true)
+      if(CheckBox_Model.checked == true)
       { 
-         Package_Selection.innerHTML() = "Standard Model";
-          if(CheckBox_tenth.checked = true)
+         Package_Selection.innerHTML = "Standard Model";
+          if(CheckBox_tenth.checked == true)
           {
-            Size_Selection.innerHTML() = "1/10th Scale";
+            Size_Selection.innerHTML = "1/10th Scale";
             Model_Price = 44.99;
           }
-          else if(CheckBox_fourth.checked = true)
+          else if(CheckBox_fourth.checked == true)
           {
-            Size_Selection.innerHTML() = "1/4th Scale";
+            Size_Selection.innerHTML = "1/4th Scale";
             Model_Price = 79.99;
           }
-          else if(CheckBox_half.checked = true)
+          else if(CheckBox_half.checked == true)
           {
-            Size_Selection.innerHTML() = "1/2 Scale";
+            Size_Selection.innerHTML = "1/2 Scale";
             Model_Price = 149.99;
           }
-          else if(CheckBox_full.checked = true)
+          else if(CheckBox_full.checked == true)
           {
-            Size_Selection.innerHTML() = "Full Scale";
+            Size_Selection.innerHTML = "Full Scale";
             Model_Price = 299.99;
           }
       }
-      else if(CheckBox_MWL.checked = true)
+      else if(CheckBox_MWL.checked == true)
       {
-        Package_Selection.innerHTML() = "Model with Lights";
-        if(CheckBox_tenth.checked = true)
+        Package_Selection.innerHTML = "Model with Lights";
+        if(CheckBox_tenth.checked == true)
           {
-            Size_Selection.innerHTML() = "1/10th Scale";
+            Size_Selection.innerHTML = "1/10th Scale";
             Model_Price = 69.99;
           }
-          else if(CheckBox_fourth.checked = true)
+          else if(CheckBox_fourth.checked == true)
           {
-            Size_Selection.innerHTML() = "1/4th Scale";
+            Size_Selection.innerHTML = "1/4th Scale";
             Model_Price = 129.99;
           }
-          else if(CheckBox_half.checked = true)
+          else if(CheckBox_half.checked == true)
           {
-            Size_Selection.innerHTML() = "1/2 Scale";  
+            Size_Selection.innerHTML = "1/2 Scale";  
             Model_Price = 229.99;
           }
-          else if(CheckBox_full.checked = true)
+          else if(CheckBox_full.checked == true)
           {
-            Size_Selection.innerHTML() = "Full Scale";  
+            Size_Selection.innerHTML = "Full Scale";  
             Model_Price = 399.99;
           }
       }
-      else if(CheckBox_wallart.checked = true)
+      else if(CheckBox_wallart.checked == true)
       {
-        Package_Selection.innerHTML() = "Wall Art";
-        if(CheckBox_tenth.checked = true)
+        Package_Selection.innerHTML = "Wall Art";
+        if(CheckBox_tenth.checked == true)
         {
-          Size_Selection.innerHTML() = "1/10th Scale";
+          Size_Selection.innerHTML = "1/10th Scale";
           Model_Price = 34.99;
         }
-        else if(CheckBox_fourth.checked = true)
+        else if(CheckBox_fourth.checked == true)
         {
-          Size_Selection.innerHTML() = "1/4th Scale";  
+          Size_Selection.innerHTML = "1/4th Scale";  
           Model_Price = 59.99;
         }
-        else if(CheckBox_half.checked = true)
+        else if(CheckBox_half.checked == true)
         {
-          Size_Selection.innerHTML() = "1/2 Scale";  
+          Size_Selection.innerHTML = "1/2 Scale";  
           Model_Price = 99.99;
         }
-        else if(CheckBox_full.checked = true)
+        else if(CheckBox_full.checked == true)
         {
-          Size_Selection.innerHTML() = "Full Scale";  
+          Size_Selection.innerHTML = "Full Scale";  
           Model_Price = 199.99;
         }
       }
-      else if(CheckBox_WAwL.checked = true)
+      else if(CheckBox_WAwL.checked == true)
       {
-        Package_Selection.innerHTML() = "Wall Art with Lights";  
-        if(CheckBox_tenth.checked = true)
+        Package_Selection.innerHTML = "Wall Art with Lights";  
+        if(CheckBox_tenth.checked == true)
         {
-          Size_Selection.innerHTML() = "1/10th Scale";  
+          Size_Selection.innerHTML = "1/10th Scale";  
           Model_Price = 59.99;
         }
-        else if(CheckBox_fourth.checked = true)
+        else if(CheckBox_fourth.checked == true)
         {
-          Size_Selection.innerHTML() = "1/4th Scale";  
+          Size_Selection.innerHTML = "1/4th Scale";  
           Model_Price = 109.99;
         }
-        else if(CheckBox_half.checked = true)
+        else if(CheckBox_half.checked == true)
         {
-          Size_Selection.innerHTML() = "1/2 Scale";   
+          Size_Selection.innerHTML = "1/2 Scale";   
           Model_Price = 199.99;
         }
-        else if(CheckBox_full.checked = true)
+        else if(CheckBox_full.checked == true)
         {
-          Size_Selection.innerHTML() = "Full Scale";  
-          Model_Price = 299.99;
+          Size_Selection.innerHTML = "Full Scale";  
+          Model_Price.innerHTML = 299.99;
         }
       }
   }
-  document.getElementById("Price_Total").innerHTML() = Total_Price;
-  document.getElementById("Selected_Size").innerHTML() = Size_Selection;
-  document.getElementById("Selected_Package").innerHTML() = Package_Selection;
-  document.getElementById("Selected_Model").innerHTML() = Model_Selection;
+       
+  document.getElementById("Price_Total").innerHTML = Model_Price;
+  document.getElementById("Selected_Size").innerHTML = Size_Selection;
+  document.getElementById("Selected_Package").innerHTML = Package_Selection;
+  document.getElementById("Selected_Model").innerHTML = Model_Selection;
 }
 
 
-Document.onload(display2.style.display = "none", display3.style.display = "none", display4.style.display = "none", tempButtonp1.style.display="none",tempButtonp2.style.display="none",uncheck());
+Document.onload(display2.style.display = "none", display3.style.display = "none", display4.style.display = "none", display5.style.display = "none", tempButtonp1.style.display="none",tempButtonp2.style.display="none",uncheck());
+
+
+// product = "cybertruck" || "supercharger"
+// attrs = []
+
+// product_sizes = ["model", "wallart", "size3"]
+
+
+// <input id="size" data-value="wall" data-text="Wall Art">
+// <input id="size" data-value="3x3">
+// <input id="size" data-value="full">
+
+// <input id="product" data-value="supercharger">
+// <input id="product" data-value="cybertruck">
+
+// <input id="lights" data-value="true">
+
+
+
+
+// sizeInputs = document.getElementById('#size')
+
+// for input in sizeINputs:
+//   if input.checked == true
+//     then input.attr('data-value') -> a.) value into HTML b.) jsonData.size = the value u pulled from input
+
+
+
+// POST => https://someapi.com/papertesla/order => SUCCESS 
+
+
+
+// jsonData = {
+//   product: 'cybertruck', // or supercharger,
+//   size: 'wall', // [wallart, normal, full, 3x3]
+//   lights: true // or false,
+  
+// }
+
+// $('#sizeAttrs').forEach(function(){
+//   my code here
+
+// })
+
+ // CheckBox_CtM.onselectionchange(function(e){
+  //   if(e.value){
+  //     display2.style.display = "block";
+  //     display2.style = "center-block";
+  //     display2.scrollIntoView();
+  //     SuperCharger.style.display = "none";
+  //     Cybertruck.style = "center-block";
+  //   }
+  // })
+
+// var onChecked = function(e){
+//   if(e.value) { // or whatever e.[event value]
+//     e.input.style.display = "block";
+//     e.input.style = "center-block";
+//     e.input.scrollIntoView();
+//     SuperCharger.style.display = "none";
+//     Cybertruck.style = "center-block";
+//   }
+// }
+
+// CheckBox_CtM.onselectionchange(onChecked);
+// // ...
+
+// CheckboxElement
+// DEFAULT: ChkxElm.onselectionchange = function(callback){ hey i got checked, call => callback(my event values) }
+// THIS: ChkxElm.onselectionchange = am i checked (true || false)
+// THEN: ChkxElm.onselectionchange == true || false

@@ -1,3 +1,6 @@
+/* make design responsive, ie better for mobile. */
+
+
 body{ background-color: #1d1d1d;color: #ffffff; font-optical-sizing:auto;}
 input{position:absolute;}
 p{text-align:center; color:#ffffff;}
@@ -11,6 +14,7 @@ p{text-align:center; color:#ffffff;}
     color:#ffffff;
     box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
     top:60%;
+    padding-bottom: 45px;
     width: 230px;
     height: 285px;
 }
@@ -37,9 +41,9 @@ p{text-align:center; color:#ffffff;}
     align-content: center;
     align-self: center;
     margin: auto;
-    border: 3px solid #0e0d0d;
-    background-color: #000000; 
-    color:#ffffff;
+    border: 3px solid #629eda;
+    background-color: #0f0e0e; 
+    color:#eee1e1;
     box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
     top:65%;
     padding-top:25px;

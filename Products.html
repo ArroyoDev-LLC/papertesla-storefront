@@ -53,12 +53,13 @@
         </div>
     </div>
     <!--Loader End-->
-<div class="pageintro wow">
+<div class="pageintro wow" id="pageintro">
   <h1>Welcome to the Products page!</h1>
   <p>Here you"ll select and choose the design for your PaperTesla </p>
   <button id="scroll-down" class="pageintro-button" type="button" onclick="button_click()">Let's get started!</button>
 </div>
 
+<!--TOdO:add color options. add js function selections-->
 
 <!--Step 1 Layout Start images are Temp Images | replace with actual images-->
 <div id="display1" class="center-block wow bottompadding">
@@ -224,9 +225,55 @@
 <!-- </div>  -->
 
 <!--Layout 3 END-->
+
+<div id="display4" class="center-block wow bottompadding">
+  <h2>Step 4 : Choose a Color option</h2>
+  <br />
+ <form name="FormGrp4">
+ <table>
+  <tr>
+   <td>
+  <div  id="Classic" class="Menu-box item">
+   <h6>Classic Silver</h6>
+   <br />
+   <div class="Menu-image">
+   <img src="images/avtar-1.jpg">
+   </div>
+   <p>This is the classic Silver Cyber Truck.</p>
+   <input id="Classic_Silver" type="checkbox" name="CheckBoxGrp4" onchange='display_step4()'>
+  </div>
+  </td>
+  <td>
+  <div id="BlackOut" class="Menu-box item">
+   <h6>Black</h6>
+   <br />
+   <div class="Menu-image">
+   <img src="images/avtar-2.jpg">
+   </div>
+   <p>This is the Cyber Truck in Black.</p>
+   <input id="Black" type="checkbox" name="CheckBoxGrp4" onchange="display_step4()">
+  </div>
+  </td>
+  <td>
+    <div id="customDesign" class="Menu-box item">
+     <h6>Custom Design</h6>
+     <br />
+     <div class="Menu-image">
+     <img src="images/avtar-2.jpg">
+     </div>
+     <p>Choose or upload your own Cyber Truck Design.</p>
+     <input id="CDesign" type="checkbox" name="CheckBoxGrp4" onchange="display_step4()">
+    </div>
+    </td>
+</tr>
+</table>
+</form>
+</div>
+
+
 <br />
 <!-- Layout 4 START -->
-<div id="display4" class="Menu-box item wow productreview Menu-text">
+<div id="display5" class="Menu-box item wow productreview Menu-text">
 <form>
  <table>
     <tr>
@@ -238,10 +285,11 @@
       </td>
         <td>
         <ul class="product-info-list product-info">
-          <li><span id="Selected_Model"></span></li>
-          <li><span id="Selected_Package"></span></li>
-          <li><span id="Selected_Size"></span></li>
-          <li><span id="Price_Total"></span></li>
+          <li>Model : <p id="Selected_Model"></p></li>
+          <li>Package : <p id="Selected_Package"></p></li>
+          <li>Size : <p id="Selected_Size"></p></li>
+          <li>Color : <P id="Selected_Color"></P></li>
+          <li>Total$ : <p id="Price_Total"></p></li>
         </ul>
        </td>
       </tr> 
