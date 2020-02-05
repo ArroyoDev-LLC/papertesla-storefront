@@ -1,20 +1,21 @@
 class ReviewFormButton extends React.Component {
   constructor(props) {
     super(props);
+
   }
   handleClick() {
-    alert("React is working");
-    return render(<ReactForm />, document.querySelector("#react-window"));
+    return ReactDOM.render(<ReactForm />, document.querySelector("#react-window"));
+
   }
   render() {
-    return <button onClick={this.handleClick}>Write a Review</button>;
+    return <button type="button" onClick={this.handleClick}>Write a Review</button>;
   }
 }
 
 class ReactForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: " " };
+    this.state = {value: " "};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,18 +26,16 @@ class ReactForm extends React.Component {
   }
   handleSubmit(event) {
     alert("Form Submitted! Thank you for your review!" + this.state.value);
-    event.preventDefault();
   }
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Name: <input type="text" value={this.state.value} />
-        </label>
-        <label>
-          Rating: <input type="text" vale={this.state.value} />
-        </label>
-        <input type="textarea" defaultValue="Write Review Here!" />
+        <label>Name: </label> <input id="Name" type="text" defaultValue="Anonymous" value={this.state.value} onChange={this.handleChange} />
+        <br /><br />
+        <label>Rating:</label> <input id="Rating" type="text" value={this.state.value} onChange={this.handleChange} />
+        <br /><br />
+        <label>Write your review!</label><input type="textarea" rows='9' defaultValue="Write Review Here!" value={this.state.value} onChange={this.handleChange} /> 
+        <br /><br />
         <button type="submit">Submit</button>
       </form>
     );

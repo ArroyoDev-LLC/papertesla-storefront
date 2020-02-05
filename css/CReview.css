@@ -17,8 +17,8 @@
    box-sizing: content-box;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-   width:80%;
-   height:50%;
+   width:100%;
+   height:100%;
    padding: 105px;
 }
 
@@ -69,6 +69,33 @@
   margin: 0px;
   text-align: center;
   align-items: center;
+  
+}
+
+@media only screen and (width: 768px)
+{
+  .review-form
+  {
+    width:auto;
+    height:auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .CR-box
+  {
+    width:auto;
+    height:auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .CR-layout
+  {
+    width:auto;
+    height:auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
 }
 
 .button
@@ -88,11 +115,6 @@
   color: #ffffff;
   margin: auto;
   padding: 0px;
-}
-
-#react-button
-{
-  border:5px solid #629eda;
 }
 
 #form-window
