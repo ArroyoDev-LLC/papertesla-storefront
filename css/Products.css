@@ -136,6 +136,7 @@ p{text-align:center; color:#ffffff; word-wrap: break-word;}
     }
     .product-image {
         width: 250px;
+        height: 150px;
         float: top;
     } 
 
