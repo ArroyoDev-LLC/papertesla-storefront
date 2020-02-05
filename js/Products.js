@@ -69,19 +69,19 @@
     var tempButtonp1 = document.getElementById("tempButton");
     var tempButtonp2 = document.getElementById("tempButton2");
 
-function button_click()
-{
-   display1.scrollIntoView();
-}
+// function button_click()
+// {
+//    display1.scrollIntoView();
+// }
 
 function display_step1(){
 
-pageintro.style.display = "none";
+// pageintro.style.display = "none";
 if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
 {
     display2.style.display = "block";
     display2.style = "center-block";
-    display2.scrollIntoView();
+    display2.scrollIntoView({behavior: 'smooth'});
     SuperCharger.style.display = "none";
     Cybertruck.style.display = "block";
     Cybertruck.style = "center-block";
@@ -92,7 +92,7 @@ if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
 {
     display2.style.display = "block";
     display2.style = "center-block";
-    display2.scrollIntoView();
+    display2.scrollIntoView({behavior: "smooth"});
     SuperCharger.style.display = "block";
     SuperCharger.style = "center-block";
     Cybertruck.style.display = "none";
@@ -118,7 +118,7 @@ function display_step2()
     {
         display3.style.display = "block";
         display3.style = "center-block";
-        display3.scrollIntoView();
+        display3.scrollIntoView({behavior: "smooth"});
         Model.style = "center-block";
         ModelWithLights.style.display = "none";
         WallArt.style.display = "none";
@@ -130,7 +130,7 @@ function display_step2()
     {
         display3.style.display = "block";
         display3.style = "center-block";
-        display3.scrollIntoView();
+        display3.scrollIntoView({behavior: "smooth"});
         ModelWithLights.style = "center-block";
         WallArt.style.display = "none";
         WallArtWithLights.style.display = "none";
@@ -142,7 +142,7 @@ function display_step2()
     {
         display3.style.display = "block";
         display3.style = "center-block";
-        display3.scrollIntoView();
+        display3.scrollIntoView({behavior: "smooth"});
         WallArt.style = "center-block";
         ModelWithLights.style.display = "none";
         Model.style.display = "none";
@@ -154,7 +154,7 @@ function display_step2()
     {
         display3.style.display = "block";
         display3.style = "center-block";
-        display3.scrollIntoView();
+        display3.scrollIntoView({behavior: "smooth"});
         WallArtWithLights.style = "center-block";
         ModelWithLights.style.display = "none";
         WallArt.style.display = "none";
@@ -182,7 +182,7 @@ function display_step3()
     {
         display4.style.display = "block";
         display4.style = "center-block";
-        display4.scrollIntoView();
+        display4.scrollIntoView({behavior: "smooth"});
         fourthScale.style = "center-block";
         tenthScale.style.display = "none";
         halfScale.style.display = "none";
@@ -193,7 +193,7 @@ function display_step3()
     {
         display4.style.display = "block";
         display4.style = "center-block";
-        display4.scrollIntoView();
+        display4.scrollIntoView({behavior: "smooth"});
         tenthScale.style = "center-block";
         fourthScale.style.display = "none";
         halfScale.style.display = "none";
@@ -204,7 +204,7 @@ function display_step3()
     {
         display4.style.display = "block";
         display4.style = "center-block";
-        display4.scrollIntoView();
+        display4.scrollIntoView({behavior: "smooth"});
         halfScale.style = "center-block";
         tenthScale.style.display = "none";
         fourthScale.style.display = "none";
@@ -215,7 +215,7 @@ function display_step3()
     {
         display4.style.display = "block";
         display4.style = "center-block";
-        display4.scrollIntoView();
+        display4.scrollIntoView({behavior: "smooth"});
         fullScale.style = "center-block";
         tenthScale.style.display = "none";
         fourthScale.style.display = "none";
@@ -245,7 +245,7 @@ function display_step4()
   {
       display5.style.display = "block";
       display5.style = "center-block";
-      display5.scrollIntoView();
+      display5.scrollIntoView({behavior: "smooth"});
       Classic.style.display = "block";
       Classic.style = "center-block";
       Black.style.display = "none";
@@ -263,7 +263,7 @@ function display_step4()
   {
       display5.style.display = "block";
       display5.style = "center-block";
-      display5.scrollIntoView();
+      display5.scrollIntoView({behavior: "smooth"});
       Black.style.display = "block";
       Black.style = "center-block";
       Classic.style.display = "none";
@@ -281,7 +281,7 @@ function display_step4()
       
       display5.style.display = "block";
       display5.style = "center-block";
-      display5.scrollIntoView();
+      display5.scrollIntoView({behavior: "smooth"});
       customDesign.style.display = "block";
       customDesign.style = "center-block";
       Classic.style.display = "none";
@@ -309,7 +309,7 @@ function display_step4()
       display3.style = "center-block";       
   }
 
-   pricing();
+//    pricing();
 }
 
 function uncheck()
@@ -345,8 +345,10 @@ function pricing()
     }
   }
 
-  JSON.stringify(request);
+  JSON.stringify(request); 
 }
+
+
 
 
 Document.onload(display2.style.display = "none", display3.style.display = "none", display4.style.display = "none", display5.style.display = "none", tempButtonp1.style.display="none",tempButtonp2.style.display="none",uncheck());

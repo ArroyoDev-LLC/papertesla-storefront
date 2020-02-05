@@ -488,12 +488,16 @@
             </tr>
             <!--Template 2 end-->
         </table>
-        <div class="review-form">
-        <div class="review-prompt">
-        <h5>Leave a review of you own!</h5>
-        </div>
+        <div class="review-form review-prompt" style="margin-left:auto; margin-right:auto;">
+        <h5>Leave a review of your own!</h5>
+        <br />
         <div class="button">
-        <button id="review-button" type="menu" onclick="write_a_review()">Review</button>
+        <!--React form -->
+        <div id="react-window" class="form-window"></div>
+        <br />
+        <!-- <button id="button" type="button">Review</button> -->
+        <div id="react-button" />
+        <!--  -->
         </div>
         </div>
     </div>
@@ -581,10 +585,12 @@
 <script src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
 <!-- map -->
-<!-- React -->
+<!-- React-->
 <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorgin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
 <!-- custom script -->
+<script src="js/Review.js" type="text/babel" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 
 </body>

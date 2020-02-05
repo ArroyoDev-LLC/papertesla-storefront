@@ -18,8 +18,10 @@ p{text-align:center; color:#ffffff;}
     top:60%;
     padding-top: 20px;
     padding-bottom: 15px;
-    width: 320px;
-    height: 345px;
+    width:auto;
+    height:auto;
+    min-width: 320px;
+    min-height: 345px;
 }
 
 .Menu-box .Menu-image{
@@ -40,12 +42,51 @@ p{text-align:center; color:#ffffff;}
    padding-bottom: 20px;
 }
 
+
+@media screen and(max-width: 600px)
+{
+    .productreview
+    {
+      width:100%;
+      min-width: auto;
+      height:100%;
+      min-height: auto;
+    }
+    .Menu-box
+    {
+        width:100%;
+        min-width: auto;
+        height: 100%;
+        min-height: auto;
+    }
+    .Menu-image
+    {
+        width: 100%;
+        min-width: auto;
+        height: 100%;
+        min-height: auto;
+    }
+    .product-image
+    {
+       width:100%;
+       min-width: auto;
+       height: 100%;
+       min-height: auto;
+    }
+    table
+    {
+        width: 100%;
+        min-width: auto;
+        height: 100%;
+        min-height: auto;
+    }
+}
+
 .productreview
 {
     align-content: center;
     align-self: center;
     text-align: center;
-    margin: auto;
     border: 3px solid #629eda;
     background-color: #0f0e0e; 
     box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
@@ -53,7 +94,7 @@ p{text-align:center; color:#ffffff;}
     padding-top:25px;
     padding-bottom:20px;
     padding-left: 15px;
-    width: 880px;
+    width: 880;
     height: 540px;
 }
 .product-image
@@ -136,6 +177,8 @@ p{text-align:center; color:#ffffff;}
     .tempbutton:hover{ background: #e05c04;
 }
 .center-block {
+    width: auto;
+    height: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -215,4 +258,10 @@ p{text-align:center; color:#ffffff;}
 
 .product-review-table p {
     text-align: right;
+}
+
+@viewport 
+{
+   min-width:auto;
+   min-height:auto;
 }
