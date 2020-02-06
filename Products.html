@@ -59,8 +59,7 @@
    <h2 class="stepOne-title" >Step 1 : Choose a Model</h2>
    <br />
   <!-- box 1 -->
-   <div class="stepOne-box-1">
-   <div  id="Cybertruck">
+   <div  id="Cybertruck" class="stepOne-box-1">
     <h6>Cybertruck</h6>
     <br />
     <div class="Menu-image">
@@ -69,11 +68,10 @@
     <p>Classic Cyber Truck Model</p>
     <input id="CtM" type="checkbox" name="CheckBoxGrp1" onchange='display_step1()'>
    </div>
-  </div>
   <!-- box 1 end -->
 
   <!-- box 2 -->
-   <div id="SuperCharger" class="Menu-box stepOne-box-2">
+   <div id="SuperCharger" class="stepOne-box-2">
     <h6>Super Charger</h6>
     <br />
     <div class="Menu-image">
@@ -83,6 +81,7 @@
     <input id="SuperC" type="checkbox" name="CheckBoxGrp1" onchange="display_step1()">
    </div>
   <!-- box 2 end -->
+  
 </div>
     <!--Step 1 Layout End-->
 <br />
@@ -91,7 +90,7 @@
 <div id="display2" class="center-block bottompadding step-layout side-scroll">
  <h2 class="stepTwo-title">Step 2 : Choose a Package</h2>
  <br />
-        <div id="Model" class="Menu-box item">
+        <div id="Model" class="Menu-box stepTwo-box1">
         <h6>Model</h6>
         <br />
         <div class="Menu-image">
@@ -101,7 +100,7 @@
         <input id="Model-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
         <br />
         </div>
-      <div id="MWL" class="Menu-box item">
+      <div id="MWL" class="Menu-box stepTwo-box2">
         <h6>Model with lights</h6>
         <br />
         <div class="Menu-image">
@@ -110,7 +109,7 @@
         <p>This is the Model With Lights that are controllable through our mobile app.</p>
         <input id="MWL-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
       </div>
-    <div id="wallart" class="Menu-box item">
+    <div id="wallart" class="Menu-box stepTwo-box3">
        <h6>Wall Art</h6>
        <br />
        <div class="Menu-image">
@@ -119,7 +118,7 @@
        <p>This is the Wall Art Model. Its for hanging on a wall.</p>
        <input id="wallart-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
     </div>
-    <div id="WAwL" class="Menu-box item">
+    <div id="WAwL" class="Menu-box stepTwo-box4">
         <h6>Wall Art with Lights</h6>
         <br />
         <div class="Menu-image">
