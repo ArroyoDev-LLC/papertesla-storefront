@@ -25,17 +25,17 @@ class ReactForm extends React.Component {
     this.setState({ value: event.target.value });
   }
   handleSubmit(event) {
-    alert("Form Submitted! Thank you for your review!" + this.state.value);
+    alert("Form Submitted! Thank you for your review!");
   }
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>Name: </label> <input id="Name" type="text" defaultValue="Anonymous" value={this.state.value} onChange={this.handleChange} />
+        <label>Name: </label> <input id="Name" type="text" defaultValue="Anonymous" onchange={this.handleChange} />
         <br /><br />
-        <label>Rating:</label> <input id="Rating" type="text" value={this.state.value} onChange={this.handleChange} />
+        <label>Rating:</label> <input id="Rating" type="text" onchange={this.handleChange} />
         <br /><br />
-        <label>Review:</label><input type="textarea" rows='9' defaultValue="Write Review Here!" value={this.state.value} onChange={this.handleChange} /> 
-        <br /><br />
+        <label>Review:</label><input type="textarea" id="Review-textarea" cols='9' rows='9' maxlength={250} defaultValue="Write Review Here!" onchange={this.handleChange} /> 
+        <br /><br/>
         <button type="submit">Submit</button>
       </form>
     );

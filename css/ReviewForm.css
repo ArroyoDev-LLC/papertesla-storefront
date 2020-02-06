@@ -9,11 +9,12 @@
 
 .review-window
 {
-   display: inline-flexbox;
+   display: flexbox;
    box-sizing: content-box;
    -webkit-box-sizing: inherit;
    -moz-box-sizing: inherit;
    min-height: 135px;
    min-width: 135px;
-   border: 2px solid #aa3723;
+   padding: 10px;
 }
+

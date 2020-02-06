@@ -111,7 +111,7 @@
 }
 
 
-@media only screen and (max-width: 600px)
+@media screen and (max-width: 600px)
 {
   .review-form
   {
@@ -123,12 +123,21 @@
 
   .CR-box
   {
-   align-self: center;
-   box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-   min-width:550px;
-   min-height:454px;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    grid-column: 3/4;
+    grid-row: 3; 
+    border: 2px; 
+    border-color: #aa3723;
+    border-style: solid;
+    background-color: #1d1d1d;
+    box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
+     width:auto;
+     height:auto;
+     max-width:564px;
+     max-height:415px;
   }
 
   .CR-layout

@@ -978,7 +978,7 @@ input{position:absolute;}
     padding-top:25px;
     padding-bottom:20px;
     padding-left: 15px;
-    max-width: 880;
+    max-width: 880px;
     max-height: 540px;
 }
 
@@ -1065,10 +1065,13 @@ input{position:absolute;}
 }
 .tempbutton:hover{ background: #e05c04;}
 
-
-
-
-
+.product-image
+{
+    justify-content: stretch;
+    max-width: 480px;
+    max-height: 355px;
+    border: 2px solid;    
+}
 
 }
 
