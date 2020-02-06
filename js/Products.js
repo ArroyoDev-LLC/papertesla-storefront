@@ -83,7 +83,7 @@ if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
     display2.style = "center-block";
     display2.scrollIntoView({behavior: 'smooth'});
     SuperCharger.style.display = "none";
-    Cybertruck.style.display = "block";
+    Cybertruck.style.display = "grid-column: 3/4";
     Cybertruck.style = "center-block";
    product_Model = document.getElementById("Selected_Model").innerHTML = "Cyber Truck Model";
    
@@ -93,8 +93,8 @@ if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
     display2.style.display = "block";
     display2.style = "center-block";
     display2.scrollIntoView({behavior: "smooth"});
-    SuperCharger.style.display = "block";
-    SuperCharger.style = "center-block";
+    SuperCharger.style.display = "grid-column: 1";
+    // SuperCharger.style = "center-block";
     Cybertruck.style.display = "none";
     product_Model = document.getElementById("Selected_Model").innerHTML = "Super Charger Model";
 

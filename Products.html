@@ -90,7 +90,7 @@
 <div id="display2" class="center-block bottompadding step-layout side-scroll">
  <h2 class="stepTwo-title">Step 2 : Choose a Package</h2>
  <br />
-        <div id="Model" class="Menu-box stepTwo-box1">
+        <div id="Model" class="stepTwo-box1">
         <h6>Model</h6>
         <br />
         <div class="Menu-image">
@@ -100,7 +100,7 @@
         <input id="Model-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
         <br />
         </div>
-      <div id="MWL" class="Menu-box stepTwo-box2">
+      <div id="MWL" class="stepTwo-box2">
         <h6>Model with lights</h6>
         <br />
         <div class="Menu-image">
@@ -109,7 +109,7 @@
         <p>This is the Model With Lights that are controllable through our mobile app.</p>
         <input id="MWL-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
       </div>
-    <div id="wallart" class="Menu-box stepTwo-box3">
+    <div id="wallart" class="stepTwo-box3">
        <h6>Wall Art</h6>
        <br />
        <div class="Menu-image">
@@ -118,7 +118,7 @@
        <p>This is the Wall Art Model. Its for hanging on a wall.</p>
        <input id="wallart-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
     </div>
-    <div id="WAwL" class="Menu-box stepTwo-box4">
+    <div id="WAwL" class="stepTwo-box4">
         <h6>Wall Art with Lights</h6>
         <br />
         <div class="Menu-image">
@@ -129,13 +129,14 @@
     </div>
 </div>
 <!--Layout 2 END -->
+
 <br />
+
 <!-- Layout 3 Start -->
-<div id="display3" class="center-block wow bottompadding">
-<h2>Step 3 : Choose a size</h2>
+<div id="display3" class="center-block wow bottompadding step-layout">
+<h2 class="stepThree-title">Step 3 : Choose a size</h2>
 <br />
- <form name="FormGrp3">
-    <div id="tenthScale" class="Menu-box item">
+    <div id="tenthScale" class="Menu-box stepThree-box1 ">
         <h6>1/10 Scale Model</h6>
         <br />
         <div class="Menu-image">
@@ -148,7 +149,7 @@
         </ul>
         <input id="tenth_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
     </div>
-    <div id="fourthScale" class="Menu-box item ">
+    <div id="fourthScale" class="Menu-box stepThree-box2 ">
       <h6>1/4 Scale Model</h6>
       <br />
       <div class="Menu-image">
@@ -161,7 +162,7 @@
       </ul>
       <input id="fourth_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
     </div>
-    <div id="halfScale" class="Menu-box item">
+    <div id="halfScale" class="Menu-box stepThree-box3">
       <h6>1/2 Scale Model</h6>
       <br />
       <div class="Menu-image">
@@ -174,7 +175,7 @@
       </ul>
       <input id="half_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
     </div>
-      <div id="FullScale" class="Menu-box item ">
+      <div id="FullScale" class="Menu-box stepThree-box4">
         <h6>Full Scale Model</h6>
         <br />
           <div class="Menu-image">
@@ -187,17 +188,15 @@
         </ul>
         <input id="Full_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
       </div>   
-</form>
 </div>
 <!-- </div>  -->
 
 <!--Layout 3 END-->
 
-<div id="display4" class="center-block wow bottompadding">
-  <h2>Step 4 : Choose a Color option</h2>
+<div id="display4" class="center-block wow bottompadding step-layout">
+  <h2 class="stepFour-title">Step 4 : Choose a Color option</h2>
   <br />
- <form name="FormGrp4">
-  <div  id="Classic" class="Menu-box item">
+  <div  id="Classic" class="Menu-box stepFour-box1 ">
    <h6>Classic Silver</h6>
    <br />
    <div class="Menu-image">
@@ -206,7 +205,7 @@
    <p>This is the classic Silver Cyber Truck.</p>
    <input id="Classic_Silver" type="checkbox" name="CheckBoxGrp4" onchange='display_step4()'>
   </div>
-  <div id="BlackOut" class="Menu-box item">
+  <div id="BlackOut" class="Menu-box stepFour-box2">
    <h6>Black</h6>
    <br />
    <div class="Menu-image">
@@ -215,7 +214,7 @@
    <p>This is the Cyber Truck in Black.</p>
    <input id="Black" type="checkbox" name="CheckBoxGrp4" onchange="display_step4()">
   </div>
-    <div id="customDesign" class="Menu-box item">
+    <div id="customDesign" class="Menu-box stepFour-box3">
      <h6>Custom Design</h6>
      <br />
      <div class="Menu-image">
@@ -224,21 +223,16 @@
      <p>Choose or upload your own Cyber Truck Design.</p>
      <input id="CDesign" type="checkbox" name="CheckBoxGrp4" onchange="display_step4()">
     </div>
-</form>
 </div>
 
 
 <br />
 <!-- Layout 4 START -->
-<div id="display5" class="Menu-box item wow productreview Menu-text product-review-box">
-<form>
-    <div class="product-review-header">
+<div id="display5" class="Menu-box productreview Menu-text product-review-box">
          <h6>Product Review</h6>
-        </div>
         <div class="Menu-image product-image">
           <img src="images/bg-img-light-1.jpg">
         </div>
-        <ul class="product-info-list product-info">
       <br />
         <div class="product-review-table">
           <table>
@@ -263,15 +257,13 @@
               <td><p id="Price_Total"></p></td>
             </tr>
           </table>
-        </div>
-        </ul> 
+        </div> 
         <div class="button-placement">
         <button id="tempButton" class="cartbutton" type="button">Add to Cart</button>
         </div>
         <div class="button2-placement">
         <button id="tempButton2" class="paypalbutton"  type="button"> Buy Now </button>
         </div>
-</form> 
 </div>
 
 <!-- Layout 4 END -->
