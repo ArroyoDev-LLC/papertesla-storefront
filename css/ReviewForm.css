@@ -13,8 +13,7 @@
    box-sizing: content-box;
    -webkit-box-sizing: inherit;
    -moz-box-sizing: inherit;
-   height: 100%;
-   width: 100%;
-   padding: 80px;
-   border: 2px solid #629eda;
+   min-height: 135px;
+   min-width: 135px;
+   border: 2px solid #aa3723;
 }

@@ -34,7 +34,7 @@ class ReactForm extends React.Component {
         <br /><br />
         <label>Rating:</label> <input id="Rating" type="text" value={this.state.value} onChange={this.handleChange} />
         <br /><br />
-        <label>Write your review!</label><input type="textarea" rows='9' defaultValue="Write Review Here!" value={this.state.value} onChange={this.handleChange} /> 
+        <label>Review:</label><input type="textarea" rows='9' defaultValue="Write Review Here!" value={this.state.value} onChange={this.handleChange} /> 
         <br /><br />
         <button type="submit">Submit</button>
       </form>

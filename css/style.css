@@ -444,12 +444,12 @@ header a.logo img {max-height:35px; max-width: 100px;vertical-align: sub;}
 }
 
 .header-appear .nav-box-round .navbar-nav .nav-link.active{
-    background-color: #629eda; /*custom color value for highlighting navbar*/
+    background-color: #aa3723; /*custom color value for highlighting navbar*/
     color: #ffffff !important;
 }
 
 .header-appear .nav-box-round .navbar-nav .nav-link:hover{
-    color: #629eda;
+    color: #aa3723;
 }
 
 /*nav line*/
