@@ -1,4 +1,3 @@
-
     //Display Variables
     var display1 = document.getElementById("display1");
     var display2 = document.getElementById("display2");
@@ -332,20 +331,49 @@ function uncheck()
 
 function pricing()
 {
-  var request =
-  {
-    email: 'papertesla@papertesla.com',
-    order:{
-      model: product_Model,
-      options:{
-        size: product_sizes,
-        package: product_package,
-        color: product_color, 
-      }
-    }
-  }
+//   var request =
+//   {
+//     email: 'papertesla@papertesla.com',
+//     order:{
+//       model: product_Model,
+//       options:{
+//         size: product_sizes,
+//         package: product_package,
+//         color: product_color, 
+//       }
+//     }
+//   }
 
-  JSON.stringify(request); 
+//   JSON.stringify(request); 
+
+//   Axios.post()
+
+// Axios({
+//     method: 'post',
+//     url: 'https://api.papertesla.com/v1/dev/orders',
+//     data: {
+//         model: product_Model,
+//         options:{
+//             size: product_sizes,
+//             package: product_package,
+//             color: product_color
+//         }
+//     }
+//   });
+
+axios.post('https://api.papertesla.com/v1/dev/orders',
+{
+   model: product_Model,
+   options:{
+       size: product_sizes,
+       package: product_package,
+       color: product_color
+   }
+})
+.then(function (response) 
+{
+    console.log(response);
+})
 }
 
 

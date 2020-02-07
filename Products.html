@@ -228,9 +228,10 @@
 
 <br />
 <!-- Layout 4 START -->
-<div id="display5" class="Menu-box productreview Menu-text product-review-box">
-         <h6>Product Review</h6>
-        <div class="Menu-image product-image">
+<!-- <div id="display5" class="step-layout ">
+         <h6 class="pr-title">Product Review</h6>
+         <br />
+        <div class="product-image">
           <img src="images/bg-img-light-1.jpg">
         </div>
       <br />
@@ -259,13 +260,50 @@
           </table>
         </div> 
         <div class="button-placement">
-        <button id="tempButton" class="cartbutton" type="button">Add to Cart</button>
+        <button id="tempButton" class="cartbutton" type="button" onclick="pricing()">Add to Cart</button>
         </div>
-        <div class="button2-placement">
+        <div class="button2-placment">
         <button id="tempButton2" class="paypalbutton"  type="button"> Buy Now </button>
         </div>
+</div> -->
+<div id="display5" class="wow Menu-text product-review-box step-layout">
+       <h4 class="pr-title" >Product Review</h4>
+      <div class="Menu-image product-image">
+        <img src="images/bg-img-light-1.jpg">
+      </div>
+      <br />
+      <div class="product-review-table">
+        <table>
+          <tr>
+            <th> Model </th>
+            <td><p id="Selected_Model"></p></td>
+          </tr>
+          <tr>
+            <th> Package </th>
+            <td> <p id="Selected_Package"></p> </td>
+          </tr>
+          <tr>
+            <th>Size</th>
+            <td><p id="Selected_Size"></p></td>
+          </tr>
+          <tr>
+            <th>Color</th>
+            <td><P id="Selected_Color"></P></td>
+          </tr>
+          <tr>
+            <th>Total Price</th>
+            <td><p id="Price_Total"></p></td>
+          </tr>
+        </table>
+      </div>
+      </ul> 
+      <div class="button-placement">
+      <button id="tempButton" class="cartbutton" type="button">Add to Cart</button>
+      </div>
+      <div class="button2-placement">
+      <button id="tempButton2" class="paypalbutton" type="button">Buy  Now</button>
+      </div>
 </div>
-
 <!-- Layout 4 END -->
 
 <!-- Optional JavaScript -->
@@ -302,7 +340,8 @@
 <script src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-<!-- map -->
+<!-- axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js" crossorigin></script>
 <!-- custom script -->
 <script src="js/script.js"></script>
 <script src="js/Products.js"></script>
