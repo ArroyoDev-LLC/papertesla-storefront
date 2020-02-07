@@ -25,7 +25,7 @@ class ReactForm extends React.Component {
     this.setState({ value: event.target.value });
   }
   handleSubmit(event) {
-    alert("Form Submitted! Thank you for your review!");
+    alert("Form Submitted! Thank you for your review! \n this page will now refresh!");
   }
   render() {
     return (

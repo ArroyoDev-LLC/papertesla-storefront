@@ -372,7 +372,8 @@ axios.post('https://api.papertesla.com/v1/dev/orders',
 })
 .then(function (response) 
 {
-    console.log(response);
+    console.log(response.pricing.retail);
+    document.getElementById('Price_Total').innerHTML = response.pricing.detail;
 })
 }
 
