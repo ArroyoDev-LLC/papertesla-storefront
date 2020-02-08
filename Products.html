@@ -3,7 +3,7 @@
     <head>
       <!--Meta Data-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>PaperTesla Products</title>
     <!-- Favicon -->
     <link rel="images/PaperTesla.jpg" href="#">
@@ -52,20 +52,20 @@
         </div>
     </div>
     <!--Loader End-->
-<div class="pageintro wow" id="pageintro"></div></div>
 
-<!--TOdO:add color options. add js function selections-->
-
+    <!-- grid start-->
 <!--Step 1 Layout Start images are Temp Images | replace with actual images-->
+<<<<<<< HEAD
 <div class="container">
 <div id="display1" class="center-block wow bottompadding">
    <h2 >Step 1 : Choose a Model</h2>
+=======
+<div id="display1" class="center-block bottompadding step-layout">
+   <h2 class="stepOne-title" >Step 1 : Choose a Model</h2>
+>>>>>>> a5d8978f9a96bd287d2f161dece5a8d3f7223c7d
    <br />
-  <form name="FormGrp1">
-  <table>
-   <tr>
-    <td>
-   <div  id="Cybertruck" class="Menu-box item">
+  <!-- box 1 -->
+   <div  id="Cybertruck" class="stepOne-box-1">
     <h6>Cybertruck</h6>
     <br />
     <div class="Menu-image">
@@ -74,9 +74,10 @@
     <p>Classic Cyber Truck Model</p>
     <input id="CtM" type="checkbox" name="CheckBoxGrp1" onchange='display_step1()'>
    </div>
-   </td>
-   <td>
-   <div id="SuperCharger" class="Menu-box item">
+  <!-- box 1 end -->
+
+  <!-- box 2 -->
+   <div id="SuperCharger" class="stepOne-box-2">
     <h6>Super Charger</h6>
     <br />
     <div class="Menu-image">
@@ -85,23 +86,22 @@
     <p>Cyber Truck Super Charger Model</p>
     <input id="SuperC" type="checkbox" name="CheckBoxGrp1" onchange="display_step1()">
    </div>
-   </td>
-</tr>
-</table>
-</form>
+  <!-- box 2 end -->
+  
 </div>
     <!--Step 1 Layout End-->
 <br />
     <!--Step 2 Layout Start-->
 
+<<<<<<< HEAD
 <div id="display2" class="center-block wow bottompadding" class="choose-scroll">
  <h2>Step 2 : Choose a Package</h2>
+=======
+<div id="display2" class="center-block bottompadding step-layout side-scroll">
+ <h2 class="stepTwo-title">Step 2 : Choose a Package</h2>
+>>>>>>> a5d8978f9a96bd287d2f161dece5a8d3f7223c7d
  <br />
- <form name="FormGrp2">
- <table>
-    <tr>
-    <td>
-        <div id="Model" class="Menu-box item">
+        <div id="Model" class="stepTwo-box1">
         <h6>Model</h6>
         <br />
         <div class="Menu-image">
@@ -111,9 +111,7 @@
         <input id="Model-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
         <br />
         </div>
-    </td>
-    <td>
-      <div id="MWL" class="Menu-box item">
+      <div id="MWL" class="stepTwo-box2">
         <h6>Model with lights</h6>
         <br />
         <div class="Menu-image">
@@ -122,9 +120,7 @@
         <p>This is the Model With Lights that are controllable through our mobile app.</p>
         <input id="MWL-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
       </div>
-    </td>
-    <td>
-    <div id="wallart" class="Menu-box item">
+    <div id="wallart" class="stepTwo-box3">
        <h6>Wall Art</h6>
        <br />
        <div class="Menu-image">
@@ -133,9 +129,7 @@
        <p>This is the Wall Art Model. Its for hanging on a wall.</p>
        <input id="wallart-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
     </div>
-    </td>
-    <td>
-    <div id="WAwL" class="Menu-box item">
+    <div id="WAwL" class="stepTwo-box4">
         <h6>Wall Art with Lights</h6>
         <br />
         <div class="Menu-image">
@@ -144,23 +138,16 @@
         <p>This is the Wall Art Model with Lights that you can control through the mobile app.</p>
         <input id="WAwL-id" type="checkbox" name="CheckboxGrp2" onchange="display_step2()">
     </div>
-    </td>
-    </tr>
-<!-- <br /> -->
-</table>
-</form>
 </div>
 <!--Layout 2 END -->
+
 <br />
+
 <!-- Layout 3 Start -->
-<div id="display3" class="center-block wow bottompadding">
-<h2>Step 3 : Choose a size</h2>
+<div id="display3" class="center-block wow bottompadding step-layout">
+<h2 class="stepThree-title">Step 3 : Choose a size</h2>
 <br />
- <form name="FormGrp3">
-  <table>
-   <tr>
-    <td>
-    <div id="tenthScale" class="Menu-box item">
+    <div id="tenthScale" class="Menu-box stepThree-box1 ">
         <h6>1/10 Scale Model</h6>
         <br />
         <div class="Menu-image">
@@ -173,10 +160,7 @@
         </ul>
         <input id="tenth_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
     </div>
-    </td>
-
-    <td>
-    <div id="fourthScale" class="Menu-box item ">
+    <div id="fourthScale" class="Menu-box stepThree-box2 ">
       <h6>1/4 Scale Model</h6>
       <br />
       <div class="Menu-image">
@@ -189,10 +173,7 @@
       </ul>
       <input id="fourth_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
     </div>
-    </td>
-
-    <td>
-    <div id="halfScale" class="Menu-box item">
+    <div id="halfScale" class="Menu-box stepThree-box3">
       <h6>1/2 Scale Model</h6>
       <br />
       <div class="Menu-image">
@@ -205,10 +186,7 @@
       </ul>
       <input id="half_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
     </div>
-    </td>
-
-    <td>
-      <div id="FullScale" class="Menu-box item ">
+      <div id="FullScale" class="Menu-box stepThree-box4">
         <h6>Full Scale Model</h6>
         <br />
           <div class="Menu-image">
@@ -221,24 +199,15 @@
         </ul>
         <input id="Full_id" type="checkbox" name="FormGrp3" onchange="display_step3()">
       </div>   
-    </td>
-
-    </tr>
-</table>
-</form>
 </div>
 <!-- </div>  -->
 
 <!--Layout 3 END-->
 
-<div id="display4" class="center-block wow bottompadding">
-  <h2>Step 4 : Choose a Color option</h2>
+<div id="display4" class="center-block wow bottompadding step-layout">
+  <h2 class="stepFour-title">Step 4 : Choose a Color option</h2>
   <br />
- <form name="FormGrp4">
- <table>
-  <tr>
-   <td>
-  <div  id="Classic" class="Menu-box item">
+  <div  id="Classic" class="Menu-box stepFour-box1 ">
    <h6>Classic Silver</h6>
    <br />
    <div class="Menu-image">
@@ -247,9 +216,7 @@
    <p>This is the classic Silver Cyber Truck.</p>
    <input id="Classic_Silver" type="checkbox" name="CheckBoxGrp4" onchange='display_step4()'>
   </div>
-  </td>
-  <td>
-  <div id="BlackOut" class="Menu-box item">
+  <div id="BlackOut" class="Menu-box stepFour-box2">
    <h6>Black</h6>
    <br />
    <div class="Menu-image">
@@ -258,9 +225,7 @@
    <p>This is the Cyber Truck in Black.</p>
    <input id="Black" type="checkbox" name="CheckBoxGrp4" onchange="display_step4()">
   </div>
-  </td>
-  <td>
-    <div id="customDesign" class="Menu-box item">
+    <div id="customDesign" class="Menu-box stepFour-box3">
      <h6>Custom Design</h6>
      <br />
      <div class="Menu-image">
@@ -269,32 +234,20 @@
      <p>Choose or upload your own Cyber Truck Design.</p>
      <input id="CDesign" type="checkbox" name="CheckBoxGrp4" onchange="display_step4()">
     </div>
-    </td>
-</tr>
-</table>
-</form>
 </div>
 </div>
 
 <br />
 <!-- Layout 4 START -->
-<div id="display5" class="Menu-box item wow productreview Menu-text">
-<form>
- <table>
-    <tr>
-      <td>
-        <div class="product-review-header">
-         <h6>Product Review</h6>
-        </div>
-        <div class="Menu-image product-image">
+<!-- <div id="display5" class="step-layout ">
+         <h6 class="pr-title">Product Review</h6>
+         <br />
+        <div class="product-image">
           <img src="images/bg-img-light-1.jpg">
         </div>
-      </td>
-        <td>
-        <ul class="product-info-list product-info">
       <br />
         <div class="product-review-table">
-          <table>
+          <table class="table product-review-table">
             <tr>
               <th> Model </th>
               <td><p id="Selected_Model"></p></td>
@@ -316,27 +269,52 @@
               <td><p id="Price_Total"></p></td>
             </tr>
           </table>
-        </div>
-        </ul>
-       </td>
-      </tr> 
-     <tr>
-      <td> 
+        </div> 
         <div class="button-placement">
-        <button id="tempButton" class="cartbutton" type="button">Add to Cart</button>
+        <button id="tempButton" class="cartbutton" type="button" onclick="pricing()">Add to Cart</button>
         </div>
-      </td>
-      <td>
-        <div class="button2-placement">
+        <div class="button2-placment">
         <button id="tempButton2" class="paypalbutton"  type="button"> Buy Now </button>
         </div>
-       </td>
-    </tr>
-    <!-- </td> -->
- </table>
-</form> 
+</div> -->
+<div id="display5" class="wow Menu-text product-review-box step-layout">
+       <h4 class="pr-title" >Product Review</h4>
+      <div class="Menu-image product-image">
+        <img src="images/bg-img-light-1.jpg">
+      </div>
+      <br />
+      <div class="product-review-table">
+        <table>
+          <tr>
+            <th> Model </th>
+            <td><p id="Selected_Model"></p></td>
+          </tr>
+          <tr>
+            <th> Package </th>
+            <td> <p id="Selected_Package"></p> </td>
+          </tr>
+          <tr>
+            <th>Size</th>
+            <td><p id="Selected_Size"></p></td>
+          </tr>
+          <tr>
+            <th>Color</th>
+            <td><P id="Selected_Color"></P></td>
+          </tr>
+          <tr>
+            <th>Total Price</th>
+            <td><p id="Price_Total"></p></td>
+          </tr>
+        </table>
+      </div>
+      </ul> 
+      <div class="button-placement">
+      <button id="tempButton" class="cartbutton" type="button" onclick="pricing()">Add to Cart</button>
+      </div>
+      <div class="button2-placement">
+      <button id="tempButton2" class="paypalbutton" type="button">Buy  Now</button>
+      </div>
 </div>
-
 <!-- Layout 4 END -->
 
 <!-- Optional JavaScript -->
@@ -373,7 +351,8 @@
 <script src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-<!-- map -->
+<!-- axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js" crossorigin></script>
 <!-- custom script -->
 <script src="js/script.js"></script>
 <script src="js/Products.js"></script>

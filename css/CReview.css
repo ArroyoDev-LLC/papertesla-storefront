@@ -1,28 +1,36 @@
 
-.CR-layout
+.cr-grid
 {
-    align-self:center;
-    padding: 5px; 
-    border: 2px; 
-    border-color: #629eda;
-    border-style: solid;
-    background-color: #1d1d1d;
-    box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
+  display: grid;
+  grid-template: minmax(250px , 600px);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(auto , 1fr);
+  grid-gap: 5px;
+  text-align: center;
+  -ms-text-align: center;
+  -moz-text-align: center;
+  -o-text-align: center;
+  -webkit-text-align: center; 
 }
 
 .CR-box
 {
-
-   align-self: center;
-   box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-   width:80%;
-   height:50%;
-   padding: 105px;
+  grid-column: 6;
+  grid-row: 3; 
+  border: 2px; 
+  border-color: #aa3723;
+  border-style: solid;
+  background-color: #1d1d1d;
+  box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
+   display: flexbox;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: -moz-box;
+   min-width:564px;
+   min-height:454px;
 }
 
-.CR-center-block 
+/* .CR-center-block 
 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -41,7 +49,7 @@
   -moz-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
+} */
 
 .CR-layout .customer-review
 {
@@ -53,11 +61,17 @@
 
 .review-title h4 h5
 {
+  grid-column: 6;
+  grid-row: 5;
   color:#ffffff;
-  text-align:left;
   margin: auto;
 }
 
+.cr-title h3
+{
+  grid-column: 6;
+  grid-row: 1;
+}
 
 .review-form
 {
@@ -69,6 +83,7 @@
   margin: 0px;
   text-align: center;
   align-items: center;
+  
 }
 
 .button
@@ -77,7 +92,7 @@
   margin: auto;
   padding: 10px;
   border-style: solid;
-  border-color: #629eda;
+  border-color: #aa3723;
   border: 5px;
     
 }
@@ -90,12 +105,47 @@
   padding: 0px;
 }
 
-#react-button
-{
-  border:5px solid #629eda;
-}
-
 #form-window
 {
   display: none;
+}
+
+
+@media screen and (max-width: 600px)
+{
+  .review-form
+  {
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .CR-box
+  {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    grid-column: 3/4;
+    grid-row: 3; 
+    border: 2px; 
+    border-color: #aa3723;
+    border-style: solid;
+    background-color: #1d1d1d;
+    box-shadow:0 4px 8px 0 (rgba(0, 0, 0, 0.2));
+     width:auto;
+     height:auto;
+     max-width:300px;
+     max-height:415px;
+  }
+
+  .CR-layout
+  {
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
 }

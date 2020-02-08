@@ -1,4 +1,3 @@
-
     //Display Variables
     var display1 = document.getElementById("display1");
     var display2 = document.getElementById("display2");
@@ -83,7 +82,7 @@ if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
     display2.style = "center-block";
     display2.scrollIntoView({behavior: 'smooth'});
     SuperCharger.style.display = "none";
-    Cybertruck.style.display = "block";
+    Cybertruck.style.display = "grid-column: 3/4";
     Cybertruck.style = "center-block";
    product_Model = document.getElementById("Selected_Model").innerHTML = "Cyber Truck Model";
    
@@ -93,8 +92,8 @@ if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
     display2.style.display = "block";
     display2.style = "center-block";
     display2.scrollIntoView({behavior: "smooth"});
-    SuperCharger.style.display = "block";
-    SuperCharger.style = "center-block";
+    SuperCharger.style.display = "grid-column: 1";
+    // SuperCharger.style = "center-block";
     Cybertruck.style.display = "none";
     product_Model = document.getElementById("Selected_Model").innerHTML = "Super Charger Model";
 
@@ -332,20 +331,50 @@ function uncheck()
 
 function pricing()
 {
-  var request =
-  {
-    email: 'papertesla@papertesla.com',
-    order:{
-      model: product_Model,
-      options:{
-        size: product_sizes,
-        package: product_package,
-        color: product_color, 
-      }
-    }
-  }
+//   var request =
+//   {
+//     email: 'papertesla@papertesla.com',
+//     order:{
+//       model: product_Model,
+//       options:{
+//         size: product_sizes,
+//         package: product_package,
+//         color: product_color, 
+//       }
+//     }
+//   }
 
-  JSON.stringify(request); 
+//   JSON.stringify(request); 
+
+//   Axios.post()
+
+// Axios({
+//     method: 'post',
+//     url: 'https://api.papertesla.com/v1/dev/orders',
+//     data: {
+//         model: product_Model,
+//         options:{
+//             size: product_sizes,
+//             package: product_package,
+//             color: product_color
+//         }
+//     }
+//   });
+
+axios.post('https://api.papertesla.com/v1/dev/orders',
+{
+   model: product_Model,
+   options:{
+       size: product_sizes,
+       package: product_package,
+       color: product_color
+   }
+})
+.then(function (response) 
+{
+    console.log(response.pricing.retail);
+    document.getElementById('Price_Total').innerHTML = response.pricing.detail;
+})
 }
 
 
