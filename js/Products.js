@@ -68,6 +68,8 @@
     var tempButtonp1 = document.getElementById("tempButton");
     var tempButtonp2 = document.getElementById("tempButton2");
 
+    var Pricing = document.getElementById('Price_Total');
+
 // function button_click()
 // {
 //    display1.scrollIntoView();
@@ -80,9 +82,10 @@ if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
 {
     display2.style.display = "block";
     display2.style = "center-block";
-    display2.scrollIntoView({behavior: 'smooth'});
+    display2.scrollIntoView({behavior: 'smooth', inline: 'nearest'});
     SuperCharger.style.display = "none";
-    Cybertruck.style.display = "grid-column: 3/4";
+    Cybertruck.style.display = "grid";
+    Cybertruck.style = "grid-column: 3/4";
     Cybertruck.style = "center-block";
    product_Model = document.getElementById("Selected_Model").innerHTML = "Cyber Truck Model";
    
@@ -92,8 +95,8 @@ if(CheckBox_CtM.onselectionchange = CheckBox_CtM.checked)
     display2.style.display = "block";
     display2.style = "center-block";
     display2.scrollIntoView({behavior: "smooth"});
-    SuperCharger.style.display = "grid-column: 1";
-    // SuperCharger.style = "center-block";
+    SuperCharger.style.display = "grid";
+    SuperCharger.style = "grid-column: 3/4";
     Cybertruck.style.display = "none";
     product_Model = document.getElementById("Selected_Model").innerHTML = "Super Charger Model";
 
@@ -118,7 +121,8 @@ function display_step2()
         display3.style.display = "block";
         display3.style = "center-block";
         display3.scrollIntoView({behavior: "smooth"});
-        Model.style = "center-block";
+        Model.style.display = "grid";
+        Model.style = "grid-column: 3/4";
         ModelWithLights.style.display = "none";
         WallArt.style.display = "none";
         WallArtWithLights.style.display = "none";
@@ -130,7 +134,8 @@ function display_step2()
         display3.style.display = "block";
         display3.style = "center-block";
         display3.scrollIntoView({behavior: "smooth"});
-        ModelWithLights.style = "center-block";
+        ModelWithLights.style.display = "grid";
+        ModelWithLights.style = "grid-column: 3/4";
         WallArt.style.display = "none";
         WallArtWithLights.style.display = "none";
         Model.style.display = "none";
@@ -142,7 +147,8 @@ function display_step2()
         display3.style.display = "block";
         display3.style = "center-block";
         display3.scrollIntoView({behavior: "smooth"});
-        WallArt.style = "center-block";
+        WallArt.style.display = "grid";
+        WallArt.style = "grid-column: 3/4";
         ModelWithLights.style.display = "none";
         Model.style.display = "none";
         WallArtWithLights.style.display = "none";
@@ -154,7 +160,8 @@ function display_step2()
         display3.style.display = "block";
         display3.style = "center-block";
         display3.scrollIntoView({behavior: "smooth"});
-        WallArtWithLights.style = "center-block";
+        WallArtWithLights.style.display = "grid";
+        WallArtWithLights.style = "grid-column: 3/4";
         ModelWithLights.style.display = "none";
         WallArt.style.display = "none";
         Model.style.display = "none";
@@ -182,7 +189,8 @@ function display_step3()
         display4.style.display = "block";
         display4.style = "center-block";
         display4.scrollIntoView({behavior: "smooth"});
-        fourthScale.style = "center-block";
+        fourthScale.style.display = "grid";
+        fourthScale.style="grid-column: 3/4";
         tenthScale.style.display = "none";
         halfScale.style.display = "none";
         fullScale.style.display = "none";
@@ -193,7 +201,8 @@ function display_step3()
         display4.style.display = "block";
         display4.style = "center-block";
         display4.scrollIntoView({behavior: "smooth"});
-        tenthScale.style = "center-block";
+        tenthScale.style.display = "grid";
+        tenthScale.style = "grid-column: 3/4";
         fourthScale.style.display = "none";
         halfScale.style.display = "none";
         fullScale.style.display = "none";
@@ -204,7 +213,8 @@ function display_step3()
         display4.style.display = "block";
         display4.style = "center-block";
         display4.scrollIntoView({behavior: "smooth"});
-        halfScale.style = "center-block";
+        halfScale.style.display = "grid";
+        halfScale.style = "grid-column: 3/4";
         tenthScale.style.display = "none";
         fourthScale.style.display = "none";
         fullScale.style.display = "none";
@@ -215,7 +225,8 @@ function display_step3()
         display4.style.display = "block";
         display4.style = "center-block";
         display4.scrollIntoView({behavior: "smooth"});
-        fullScale.style = "center-block";
+        fullScale.style.display = "grid";
+        fullScale.style = "grid-column: 3/4";
         tenthScale.style.display = "none";
         fourthScale.style.display = "none";
         halfScale.style.display = "none";
@@ -245,8 +256,8 @@ function display_step4()
       display5.style.display = "block";
       display5.style = "center-block";
       display5.scrollIntoView({behavior: "smooth"});
-      Classic.style.display = "block";
-      Classic.style = "center-block";
+      Classic.style.display = "grid";
+      Classic.style = "grid-column: 3/4";
       Black.style.display = "none";
       customDesign.style.display = "none";
       tempButtonp1.style.display = "block";
@@ -263,8 +274,8 @@ function display_step4()
       display5.style.display = "block";
       display5.style = "center-block";
       display5.scrollIntoView({behavior: "smooth"});
-      Black.style.display = "block";
-      Black.style = "center-block";
+      Black.style.display = "grid";
+      Black.style = "grid-column: 3/4";
       Classic.style.display = "none";
       customDesign.style.display = "none";
       tempButtonp1.style.display = "block";
@@ -281,8 +292,8 @@ function display_step4()
       display5.style.display = "block";
       display5.style = "center-block";
       display5.scrollIntoView({behavior: "smooth"});
-      customDesign.style.display = "block";
-      customDesign.style = "center-block";
+      customDesign.style.display = "grid";
+      customDesign.style = "grid-column: 3/4";
       Classic.style.display = "none";
       Black.style.display = "none";
       tempButtonp1.style.display = "block";
