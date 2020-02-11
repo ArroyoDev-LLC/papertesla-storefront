@@ -64,10 +64,18 @@ class ReactForm extends React.Component {
         </div>
         </div>
         <div class="row">
-        <div class="col-3"></div>
-        <div class="col-md-4">
-        <input id="Rating" class="form-Rating" type="text" onchange={this.handleChange} />
+        <div class="col-md-3"></div>
+        <div class="col-sm-5">
+        {/* <input id="Rating" class="form-Rating" type="text" onchange={this.handleChange} /> */}
+        <h5>
+        <input><span index='1' class="fa fa-star star-rating"></span></input>
+        <span index='2' class="fa fa-star star-rating"></span>
+        <span index='3' class="fa fa-star star-rating"></span>
+        <span index='4' class="fa fa-star star-rating"></span>
+        <span index='5' class="fa fa-star star-rating"></span>
+        </h5>
         </div>
+        <div class="col-md-7"></div>
         </div>
         <br /><br />
         {/* <div class="row">
@@ -79,7 +87,7 @@ class ReactForm extends React.Component {
         <div class="row">
         <div class="col-3"></div>
         <div class="col-md-3">
-        <input type="textarea" class="form-textarea" id="Review-textarea" cols="30" rows="5" placeholder="Write review here!" maxlength='150' onchange={this.handleChange} /> 
+        <textarea class="form-textarea" id="Review-textarea" cols="30" rows="5" placeholder="Write review here!" maxlength='150' onchange={this.handleChange} /> 
         </div>
         </div>
         <br /><br/>

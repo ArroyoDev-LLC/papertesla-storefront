@@ -35,7 +35,66 @@
     width: 230px;
     height: 150px;
     justify-self: left;
-    text-align: start;       
+    text-align: start;   
+    outline: none;    
+}
+
+textarea 
+{
+    
+    outline-color:#aa3723;
+}
+
+
+.star-rating
+{
+  color: none;
+}
+.star-rating:first-child
+{
+    position: static;
+}
+.star-rating:nth-child(5)
+{
+    z-index: 5;
+}
+.star-rating:nth-child(4)
+{
+    z-index: 4;
+}
+.star-rating:nth-child(3)
+{
+    z-index: 3;
+}
+.star-rating:nth-child(2)
+{
+    z-index: 2;
+}
+.star-rating:nth-child(1)
+{
+    z-index: 1;
+}
+
+.star-rating:hover
+{
+  color: orange;
+}
+
+.star-rating:first-child .star-rating
+{
+    color:orange;
+}
+
+.star-rating:not(:hover) span:checked ~ .star-rating,
+.star-rating:hover ~ .star-rating
+{
+  color:orange;
+}
+
+span:focus:not(:checked) ~ .star-rating:last-child
+{
+    color: none;
+    text-shadow: orange;
 }
 
 .form-rating
