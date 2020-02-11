@@ -452,54 +452,77 @@
 </section>
 <!--App Section End-->
 <!--Write a review section -->
-
-
-
 <!--Testimonials Start-->
 <!--TODO: add custom javascript for getting Reviews -->
 <section id="review">
-        <div class="container-fluid">
+        <div class="container-fluid Overlay-effect">
             <!-- <div class="row align-items-center"> -->
                 <div class="fadeInLeft">
-                    <!-- <div class="title"> -->
-                        <h3 class="text-white cr-title">Customer reviewers, and Build gallery!</h3>
-                <br />
+                <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
+                <h2 class="text-white cr-title title col-md-6">Customer reviewers, and Build gallery!</h2>
+                </div>
+                </div>
                 <!-- Review 1 / template -->
-                <div class="fadeInRight cr-grid ">
+                <div class="fadeInRight container">
+                <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-4">
                  <div class="CR-box">
                     <div class="review-title text-white fadeIn">
-                     <h3 >Anonymous</h3>
+                    <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                     <h3 id="">Anonymous</h3>
+                    </div>
+                    <div class="col-md-4"></div>
+                    </div>
                      <br />
-                     <h5>5.0 / 5.0</h5>
+                     <div class="row">
+                      <div class="col-md-4"></div>
+                     <div class="col-md-4">
+                     <h5 id="" value="default">5.0 / 5.0</h5>
+                     </div>
+                     </div>
                      <br />
-                     <p>
+                     <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">
+                     <p id="" value="default">
                          This is an anonymous review.
                          it is to test and design the review template
                      </p>
+                    </div>
+                    </div>
                   </div> 
-                </div>
+                 </div>
+               </div>
+              <div class="col-md-4"></div>
+             </div>
             </div>
+             <!--End of Review Template-->
         <br /><br />
         <div class="review-form review-prompt">
         <h5>Leave a review of your own!</h5>
         <br />
-        <div class="button">
-        <!--React form -->
-
-         <div id="react-window" class="review-window" />
-        <br />
-        <!-- <button id="button" type="button">Review</button> -->
-        <div id="react-button" class="react-button" onClick="toggleBorder()"/>
-        <!--  -->
+        <div class="col-md-2"></div>
+        <div class="button col-md-6">
+        <!--React form -->         
+         <div id="react-window" class="review-window"/>
+         <div id="react-button" class="react-button" onclick="toggleForm()"/>
+         
+         <br />
         </div>
+        <div class="col-md-4"></div>
         </div>
     <!-- </div> -->
      <!-- </div> -->
      </div>
     </div>
-    </section>
+</section>
     <!--Testimonial End-->    
-
 <!--Footer Start-->
 <section class="bg-dark text-center" id="contact">
     <!-- Contact us info for footer -->
@@ -577,7 +600,8 @@
 <script src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-<!-- map -->
+<!-- axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js" crossorigin></script>
 <!-- React-->
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
@@ -585,6 +609,7 @@
 <!-- custom script -->
 <script src="js/Review.js" type="text/babel"></script>
 <script src="js/FormButton.js"></script>
+<script src="js/customerReviews.js"></script>
 <script src="js/script.js"></script>
 
 </body>
