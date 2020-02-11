@@ -48,7 +48,7 @@ textarea
 
 .star-rating
 {
-  color: none;
+  color: orange;
 }
 .star-rating:first-child
 {
@@ -77,7 +77,7 @@ textarea
 
 .star-rating:hover
 {
-  color: orange;
+  color: blue;
 }
 
 .star-rating:first-child .star-rating
@@ -88,13 +88,13 @@ textarea
 .star-rating:not(:hover) span:checked ~ .star-rating,
 .star-rating:hover ~ .star-rating
 {
-  color:orange;
+  color:red;
 }
 
 span:focus:not(:checked) ~ .star-rating:last-child
 {
-    color: none;
-    text-shadow: orange;
+    color:gray;
+    text-shadow: green;
 }
 
 .form-rating
