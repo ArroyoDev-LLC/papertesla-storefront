@@ -70,6 +70,8 @@
 
     var Pricing = document.getElementById('Price_Total');
 
+    var productId;
+
 // function button_click()
 // {
 //    display1.scrollIntoView();
@@ -126,8 +128,8 @@ function display_step2()
         ModelWithLights.style.display = "none";
         WallArt.style.display = "none";
         WallArtWithLights.style.display = "none";
-       product_package = document.getElementById("Selected_Package").innerHTML = "Model";
-
+        product_package = document.getElementById("Selected_Package").innerHTML = "Model";
+        product_package = {lights: false};
     } 
      else if(CheckBox_MWL.onselectionchange = CheckBox_MWL.checked)
     {
@@ -139,8 +141,8 @@ function display_step2()
         WallArt.style.display = "none";
         WallArtWithLights.style.display = "none";
         Model.style.display = "none";
-       product_package = document.getElementById("Selected_Package").innerHTML = "Model with Lights";
-
+        product_package = document.getElementById("Selected_Package").innerHTML = "Model with Lights";
+        product_package = {lights: true};
     } 
      else if(CheckBox_wallart.onselectionchange = CheckBox_wallart.checked)
     {
@@ -152,8 +154,8 @@ function display_step2()
         ModelWithLights.style.display = "none";
         Model.style.display = "none";
         WallArtWithLights.style.display = "none";
-       product_package = document.getElementById("Selected_Package").innerHTML = "Wall Art";
-
+        product_package = document.getElementById("Selected_Package").innerHTML = "Wall Art";
+        product_package = {lights: false};
     }
      else if(CheckBox_WAwL.onselectionchange = CheckBox_WAwL.checked)
     {
@@ -166,6 +168,7 @@ function display_step2()
         WallArt.style.display = "none";
         Model.style.display = "none";
         product_package = document.getElementById("Selected_Package").innerHTML = "Wall Art with Lights";
+        product_package = {lights: true};
     } 
      else
     {
@@ -195,6 +198,7 @@ function display_step3()
         halfScale.style.display = "none";
         fullScale.style.display = "none";
         product_sizes = document.getElementById("Selected_Size").innerHTML = "1/4 Scale";
+        productId = 1;
     } 
      else if(CheckBox_tenth.onselectionchange = CheckBox_tenth.checked)
     {
@@ -207,6 +211,7 @@ function display_step3()
         halfScale.style.display = "none";
         fullScale.style.display = "none";
         product_sizes = document.getElementById("Selected_Size").innerHTML = "1/10 Scale";
+        productId = 0;
     }
      else if(CheckBox_half.onselectionchange = CheckBox_half.checked)
     {
@@ -219,6 +224,7 @@ function display_step3()
         fourthScale.style.display = "none";
         fullScale.style.display = "none";
         product_sizes = document.getElementById("Selected_Size").innerHTML = "1/2 Scale";
+        productId = 2;
     } 
      else if(CheckBox_full.onselectionchange = CheckBox_full.checked)
     {
@@ -231,6 +237,7 @@ function display_step3()
         fourthScale.style.display = "none";
         halfScale.style.display = "none";
         product_sizes = document.getElementById("Selected_Size").innerHTML = "Full Scale";
+        productId = 3;
     } 
      else
     {
@@ -372,17 +379,41 @@ function pricing()
 //     }
 //   });
 
+product_package = {
+    "Model with Lights": {
+        lights: true ? false : true,       
+    },
+    "Model":{
+        lights: true ? false : false,
+    },
+    "WAwL":{
+        lights: true ? false : true,
+    },
+    "WallArt":
+    {
+        lights: true ? false : false,
+    }
+}
+
 axios.post('https://api.papertesla.com/v1/dev/orders',
 {
    model: product_Model,
-   options:{
+   options:
+   {
        size: product_sizes,
-       package: product_package,
-       color: product_color
+       id: productId,
+       color: product_color,
+       product_package:
+       {
+           lights: true ? false: false,
+           
+       }
    }
 })
-.then(function (response) 
+.then(function (Response) 
 {
+
+    alert('#$%')
     console.log(response.pricing.retail);
     document.getElementById('Price_Total').innerHTML = response.pricing.detail;
 })

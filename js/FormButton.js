@@ -1,5 +1,6 @@
-function toggleBorder()
+function toggleForm()
 {
-    var borderOn = document.getElementById('react-window');
-    borderOn.style.border = "2px solid #aa3723";
+    var formOverlay = document.getElementById('Overlay-effect');
+    formOverlay.style.visibility="visible";
+        
 }

@@ -2,13 +2,16 @@ class ReviewFormButton extends React.Component {
   constructor(props) {
     super(props);
 
+
   }
   handleClick() {
+    // document.getElementById("form-popup").style.visibility="visible";
+    // document.getElementById('react-window').style.visibility="visible";
     return ReactDOM.render(<ReactForm />, document.querySelector("#react-window"));
 
   }
   render() {
-    return <button type="button" onClick={this.handleClick}>Write a Review</button>;
+    return <button type="button" id="reactButton" onClick={this.handleClick}>Write a Review</button>;
   }
 }
 
@@ -26,18 +29,68 @@ class ReactForm extends React.Component {
   }
   handleSubmit(event) {
     alert("Form Submitted! Thank you for your review! \n this page will now refresh!");
+    axios.post('/urltoapi',
+    {
+      form: getElementById(reviewForm),
+      formData:
+      {
+         Name: document.getElementById("Name"),
+         Rating: document.getElementById("Rating"),
+         Review: document.getElementById("Review-textarea")
+      }
+    });
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>Name: </label> <input id="Name" type="text" defaultValue="Anonymous" onchange={this.handleChange} />
+      <div class="container">
+      <form id="reviewForm" class="react-form" name="reviewForm" onSubmit={this.handleSubmit}>
+        <div class="row">
+        <div class="col-4"></div>
+        <div class="col-md-3">
+        <label>Name</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-3"></div>
+        <div class="col-md-4">
+        <input id="Name" class="form-Name" type="text" placeholder="Anonymous" onchange={this.handleChange} />
+        </div>
+        </div>       
         <br /><br />
-        <label>Rating:</label> <input id="Rating" type="text" onchange={this.handleChange} />
+        <div class="row">
+        <div class="col-4"></div>
+        <div class="col-md-3">
+        <label>Rating</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-3"></div>
+        <div class="col-md-4">
+        <input id="Rating" class="form-Rating" type="text" onchange={this.handleChange} />
+        </div>
+        </div>
         <br /><br />
-        <label>Review:</label><input type="textarea" id="Review-textarea" cols='9' rows='9' maxlength={250} defaultValue="Write Review Here!" onchange={this.handleChange} /> 
+        {/* <div class="row">
+        <div class="col-4"></div>
+        <div class="col-md-3">
+        <label>Review</label>
+        </div>
+        </div> */}
+        <div class="row">
+        <div class="col-3"></div>
+        <div class="col-md-3">
+        <input type="textarea" class="form-textarea" id="Review-textarea" cols="30" rows="5" placeholder="Write review here!" maxlength='150' onchange={this.handleChange} /> 
+        </div>
+        </div>
         <br /><br/>
+        <div class="row">
+        <div class="col-4"></div>
+        <div class="col-md-3">
         <button type="submit">Submit</button>
+        </div>
+        </div>
       </form>
+      </div>
     );
   }
 }

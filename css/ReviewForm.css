@@ -1,20 +1,92 @@
 .react-form
 {
     align-self: center;
+    justify-content: center;
     margin: 0px;
     padding:5px;
-    text-align: left;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    background-color: #1d1d1d;
+    color: #ffff;
+    border: solid 2px #aa3723;
     
 }
 
 .review-window
 {
    display: flexbox;
+   float: center;
+   position: center;
+   justify-content: center;
    box-sizing: content-box;
    -webkit-box-sizing: inherit;
    -moz-box-sizing: inherit;
-   min-height: 135px;
+   min-height: 150px;
    min-width: 135px;
    padding: 10px;
 }
+
+.react-button-style
+{    
+    border: round 2px;
+}
+
+.form-textarea
+{
+    width: 230px;
+    height: 150px;
+    justify-self: left;
+    text-align: start;       
+}
+
+.form-rating
+{
+  justify-self: left;
+  text-align: left;
+}
+
+.form-name
+{
+  justify-self: left;
+  text-align: left;
+}
+
+.popup-overlay
+{
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(green);
+   transition: opacity 500ms;
+   opacity: 100%;
+   overflow: hidden;
+   transition: .3ms;
+}
+
+/* .popup
+{
+   margin: 70px auto;
+   visibility: visible;
+   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+   background-color: #3d3d3d;
+   border: 2px solid #eb7560;
+   overflow: hidden;
+   opacity: 1;
+   color: #ffff;
+   transition: all 3s ease-in-out;
+}
+
+.popup textarea
+{
+  width: 250px;
+  height: 300px;
+  color: black;
+  background-color: white;
+}
+.popup text
+{
+    background-color: white;
+    color:black;
+} */
 
