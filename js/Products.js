@@ -53,7 +53,12 @@
     var CheckBox_Black = document.getElementById("Black");
 
     var CheckBox_Custom = document.getElementById("CDesign");
-       
+    function CheckBox_Custom(){
+        if(document.getElementById('CheckBox_Custom').checked){
+            window.location='skin.html';
+        }
+        return true;
+    }
 
     //product variables
     var product_Model = document.getElementById("Selected_Model");
