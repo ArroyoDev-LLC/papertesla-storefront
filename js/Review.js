@@ -67,13 +67,12 @@ class ReactForm extends React.Component {
         <div class="col-md-3"></div>
         <div class="col-sm-5">
         {/* <input id="Rating" class="form-Rating" type="text" onchange={this.handleChange} /> */}
-        <h5>
-        <span index='5' class="fa fa-star star-rating"></span>
-        <span index='4' class="fa fa-star star-rating"></span>
-        <span index='3' class="fa fa-star star-rating"></span>
-        <span index='2' class="fa fa-star star-rating"></span>
-        <span index='1' class="fa fa-star star-rating"></span>
-        </h5>
+        <span type="radio" index={1} class="fa fa-star star-rating"></span>
+        <span type="radio" index={2} class="fa fa-star star-rating"></span>
+        <span type="radio" index={3} class="fa fa-star star-rating"></span>
+        <span type="radio" index={4} class="fa fa-star star-rating"></span>
+        <span type="radio" index={5} class="fa fa-star star-rating"></span>
+
         </div>
         <div class="col-md-7"></div>
         </div>
