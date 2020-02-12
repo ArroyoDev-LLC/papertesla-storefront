@@ -27,7 +27,15 @@
 
 .react-button-style
 {    
-    border: round 2px;
+    background-color: #aa3723;
+    color: white;
+    border: none;
+    padding: 5px 5px 5px 5px;
+}
+
+.react-button-style .Submit
+{
+  padding: 10px 10px;
 }
 
 .form-textarea
@@ -48,7 +56,7 @@ textarea
 
 .star-rating
 {
-  color: none;
+  color: orange;
 }
 .star-rating:first-child
 {
@@ -77,25 +85,25 @@ textarea
 
 .star-rating:hover
 {
-  color: orange;
+  color: white;
 }
 
 .star-rating:first-child .star-rating
 {
-    color:orange;
+    color: orange;
 }
 
 .star-rating:not(:hover) span:checked ~ .star-rating,
 .star-rating:hover ~ .star-rating
 {
-  color:orange;
+  color: white;
 }
 
-span:focus:not(:checked) ~ .star-rating:last-child
+/* span:focus:not(:checked) ~ .star-rating:last-child
 {
-    color: none;
-    text-shadow: orange;
-}
+    color:gray;
+    text-shadow: green;
+} */
 
 .form-rating
 {
