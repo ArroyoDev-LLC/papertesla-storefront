@@ -11,7 +11,7 @@ class ReviewFormButton extends React.Component {
 
   }
   render() {
-    return <button type="button" id="reactButton" onClick={this.handleClick}>Write a Review</button>;
+    return <button type="button" class="rounded react-button-style" id="reactButton" onClick={this.handleClick}>Write a Review</button>;
   }
 }
 
@@ -42,7 +42,7 @@ class ReactForm extends React.Component {
   }
   render() {
     return (
-      <div class="container">
+      <div class="container ml-3">
       <form id="reviewForm" class="react-form" name="reviewForm" onSubmit={this.handleSubmit}>
         <div class="row">
         <div class="col-4"></div>
@@ -53,7 +53,7 @@ class ReactForm extends React.Component {
         <div class="row">
         <div class="col-3"></div>
         <div class="col-md-4">
-        <input id="Name" class="form-Name" type="text" placeholder="Anonymous" onchange={this.handleChange} />
+        <input id="Name" class="form-Name" type="text" placeholder="Name here or put anonymous!" required onchange={this.handleChange} />
         </div>
         </div>       
         <br /><br />
@@ -86,14 +86,14 @@ class ReactForm extends React.Component {
         <div class="row">
         <div class="col-3"></div>
         <div class="col-md-3">
-        <textarea class="form-textarea" id="Review-textarea" cols="30" rows="5" placeholder="Write review here!" maxlength='150' onchange={this.handleChange} /> 
+        <textarea class="form-textarea mr-5" id="Review-textarea" cols="30" rows="5" placeholder="Write review here!" maxlength='150' onchange={this.handleChange} required /> 
         </div>
         </div>
-        <br /><br/>
+        {/* <br /><br/> */}
         <div class="row">
         <div class="col-4"></div>
         <div class="col-md-3">
-        <button type="submit">Submit</button>
+        <button type="submit" class="rounded react-button-style  mb-2 mt-2">Submit</button>
         </div>
         </div>
       </form>

@@ -106,13 +106,25 @@
   padding: 0px;
 }
 
+.review-images
+{
+  max-width: 450px;
+  max-height: 450px;
+}
+
+
+/*Mobile only class to hide sidenav for Desktop on Main Site page*/
+.mobile-only
+{
+  display: none;
+}
 /* #form-window
 {
   display: none;
 } */
 
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 800px)
 {
   .review-form
   {
@@ -120,6 +132,13 @@
     height:auto;
     max-width: 100%;
     max-height: 100%;
+  }
+
+  .mobile-only
+  {
+
+   display: inline-block;
+
   }
 
   .CR-box
