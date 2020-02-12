@@ -53,7 +53,7 @@
     var CheckBox_Black = document.getElementById("Black");
 
     var CheckBox_Custom = document.getElementById("CDesign");
-
+       
 
     //product variables
     var product_Model = document.getElementById("Selected_Model");
